@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Deal Manually</title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+  </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Deal Pipeline</h2>
+    <div class="sidenavNew">
+      <button class="accordion">
+        <a href="./Create_a_Portfolio_Company.html"
+          >Create or Modify a Portfolio Company</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Create_a_Portfolio_Company.html">
+              Create a Portfolio Company
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./Quickly_Create_Portfolio_Company.html">
+              Quickly Create Portfolio Company
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="./Edit_a_Portfolio_Company.html">
+              Edit a Portfolio Company
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accord" style="background: var(--link-bgColor);">
+        <a
+          style="color: var(--link-color);"
+          href="./Detailed_View_Portfolio_Information_Tab.html"
+          >Portfolio Information</a
+        >
+      </button>
+
+      <button class="accord">
+        <a href="./Detailed_View_Additional_Information_Tab.html"
+          >Additional Information</a
+        >
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Cashflow_Tab.html">Cashflow</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Financials_Tab.html">Financials</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Set_up_Tab.html">Set up</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Collateral_Tab.html">Collateral</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Compliance_Tab.html">Compliance</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_CheckList_Tab.html">Checklist</a>
+      </button>
+      <button class="accord">
+        <a href="./Detailed_View_Notes_Tab.html">Notes</a>
+      </button>
+
+      <button class="accordion">
+        <a href="./Detailed_View_More_Information_Tab.html">More Information</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./more_information_calendar.html">
+              Activities
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_email_templates.html">
+              Email
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_documents.html">
+              Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accordion">
+        <a href="./Delete_a_Portfolio_Company.html"
+          >Manage Records in Portfolio Company</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Delete_a_Portfolio_Company.html">
+              Delete a Portfolio Company</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="./Manage_Records_of_Portfolio_Company_module.html">
+              Manage Records of Portfolio Company</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+          <h3>
+            <span class="mw-headline" id="Portfolio_Information.3F"
+              >Portfolio Information Tab</span
+            >
+          </h3>
+          <hr />
+          This tab contains basic information about the Portfolio Company.
+          Fields in this tab along with their description are given below.
+          <br /><br />
+          <b>Summary Information</b> <br /><br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Investee Company Name</td>
+              <td>
+                Provide name of the Investee Company. This field is mandatory.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Date of Investment</td>
+              <td>Select Date of Investment.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Assigned To</td>
+              <td>
+                Shows the <span href="Users.html">User</span> or
+                <span href="Groups.html">Group</span> to which Portfolio Company
+                is assigned.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Created Time</td>
+              <td>Shows created Time of Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Exit Completed</td>
+              <td>Checkbox to select Exit Completed status of Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Portfolio Code</td>
+              <td>Shows auto-generated code of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Business Description</td>
+              <td>Provide description about the Portfolio company.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Modified Time</td>
+              <td>Shows last modified Time of Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Created By</td>
+              <td>Shows created by of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Exit Date</td>
+              <td>Select Exit Date of Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">NPL</td>
+              <td></td>
+            </tr>
+          </table>
+          <p><b>Deal Information</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Investment Currency</td>
+              <td>
+                Select the Investment Currency of the Portfolio. This field is
+                mandatory.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">GP Office</td>
+              <td>Select General Partner's office location.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Deal Sector</td>
+              <td>
+                Select sector of the investment. For example - Infrastructure,
+                Finance, etc.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Deal Sub Sector</td>
+              <td>
+                Select sub sector of the Deal based on sector selected earlier.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Investee Company Legal Name</td>
+              <td>Provide name of the Investee Company.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Stakeholding</td>
+              <td>Select Stakeholding e.g. Control or Minority.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Deal City</td>
+              <td>Select location (City) of the investment.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Deal Type</td>
+              <td>
+                Select the Deal Type e.g. MBI, MBO, Startup, Growth, Follow on
+                etc.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="width: 200px;">Listed Company</td>
+              <td>Select whether the company is Listed or Unlisted.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Transaction Type</td>
+              <td>
+                Select the Transaction Type e.g. Primary, Secondary and Both.
+              </td>
+            </tr>
+
+            <tr>
+              <td style="width: 200px;">GP Role</td>
+              <td>
+                Select Role of the General Partner in investment e.g. Lead,
+                Co-Lead or Follow.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Associated Deal</td>
+              <td>Select the Deal Associated with the Portfolio.</td>
+            </tr>
+
+            <tr>
+              <td style="width: 200px;">Deal Leader</td>
+              <td>This field shows user associated with the deal.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Investment Type</td>
+              <td>
+                Select Investment Type e.g. Bond, Convertible Bond, Loan,
+                Secured Loan, Unsecured Loan, Others.
+              </td>
+            </tr>
+          </table>
+
+          <p><b>Investment entry Valuation and Financials</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">FY (Year)</td>
+              <td>Select FY from the dropdown.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Revenue</td>
+              <td>Calculated Field. Shows Revenue of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Enterprise Value</td>
+              <td>Provide Enterprise Value of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Equity Value</td>
+              <td>Provide Equity Value of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Entry EV/Revenue</td>
+              <td>
+                Calculated Field. Shows Entry EV/Revenue of the Portfolio.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">CCY</td>
+              <td>This field display Financials Currency of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">EBITDA</td>
+              <td>Calculated Field. Shows EBITDA of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Net Debt</td>
+              <td>Provide Net Debt of the Portfolio.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Entry EV/EBITDA</td>
+              <td>Calculated Field. Shows Entry EV/EBITDA of the Portfolio.</td>
+            </tr>
+          </table>
+          <p><b>Entry Financials</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Date</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Revenue (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">EBITDA (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">PAT (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Networth (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Gross Debt (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Cash (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Shares O/s (m)</td>
+              <td></td>
+            </tr>
+          </table>
+          <p><b>Exit Financials</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Date</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Revenue (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">EBITDA (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">PAT (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Networth (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Gross Debt (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Cash (Cr.)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Shares O/s (m)</td>
+              <td></td>
+            </tr>
+          </table>
+
+          <p><b>Health Status</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Current</td>
+              <td>
+                Shows Current health status based on the current valuation of
+                the investment.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Previous</td>
+              <td>
+                Shows Previous health status based on the previous valuation of
+                the investment.
+              </td>
+            </tr>
+          </table>
+
+          <p><b>Investment Summary (Actual Cashflow)</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Investment at Cost</td>
+              <td>Calculated Field. Shows Investment at Cost.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Sale Proceeds Till Date</td>
+              <td>Calculated Field. Shows sales proceeds till date.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Dividend / Interest Income</td>
+              <td>
+                Calculated Field. Shows total divident/interest income earned
+                till date.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Current Cost</td>
+              <td>Calculated Field. Shows Current Cost of the investment.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Other Income</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Interest on Principal</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Interest on Interest</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Default Interest</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Total Realizations</td>
+              <td>Calculated Field. Shows Total Realizations till date.</td>
+            </tr>
+          </table>
+          <p><b>Investment Summary (Expected Future Cashflow)</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Follow-on Investment (Expected)</td>
+              <td>Calculated Field. Shows expected Follow-on Investment.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Dividend/Interest Income (Expected)</td>
+              <td>
+                Calculated Field. Shows expected divident/interest income yet to
+                be realized.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">
+                Sale Proceeds/Redemptions (Expected)
+              </td>
+              <td>
+                Calculated Field. Shows expected Sale proceeds yet to be
+                realized.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Total Realizations (Expected)</td>
+              <td>
+                Calculated Field. Shows expected Total Realizations yet to be
+                realized.
+              </td>
+            </tr>
+          </table>
+
+          <p><b>Valuation</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Current Valuation</td>
+              <td>Calculated Field. Shows Current Valuation.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Valuation Methodology</td>
+              <td>
+                Shows Valuation Methodology used for the Current Valuation.
+              </td>
+            </tr>
+          </table>
+
+          <p><b>IRR & MoC</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">IC Case IRR (%)</td>
+              <td>Enter IC Case IRR % at the time of investment.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Current Gross IRR (%)</td>
+              <td>
+                <p>
+                  Calculated Field. Shows Current Gross IRR (Internal Rate of
+                  Return) percentage.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Expected Gross IRR (%)</td>
+              <td>
+                Calculated Field. Shows Expected Gross IRR (Internal Rate of
+                Return) percentage.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">IC Case MoC</td>
+              <td>
+                Enter IC Case MoC (Multiple of Capital) at the time of
+                investment.
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Current Gross MoC</td>
+              <td>
+                <p>
+                  Calculated Field. Shows Current Gross MoC. MoC stands for
+                  Multiple of Capital and is a measure of performance. It
+                  measures the proceeds received when an investment is sold, or
+                  the valuation of an investment is held, as a multiple of the
+                  original cost of the investment.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Expected Gross MoC</td>
+              <td>Calculated Field. Shows Expected Gross MoC.</td>
+            </tr>
+          </table>
+
+          <p><b>Financials Set up</b> list view contains following details</p>
+          <ol>
+            <li>Financial Year Month End</li>
+            <li>Currency</li>
+            <li>Units</li>
+            <li>IC Plan Periodicity</li>
+            <li>Budget Periodicity</li>
+            <li>Actuals Periodicity</li>
+          </ol>
+          <p>
+            To edit the details, hover the mouse on the field and click
+            <b>Edit</b>.
+          </p>
+          <p>
+            <b>Note</b>: Once periodicity (i.e. frequency) has been defined and
+            numbers have been uploaded then its not allowed to change the
+            periodicity.
+          </p>
+          <img
+            class="images"
+            src="../../images/Portofolio Company/Detailed_View_Portfolio_Information_Tab_1.png"
+            width="900"
+          />
+          <p><br /></p>
+
+          <p><b>Address Information</b></p>
+          <br />
+          <table
+            class="table table-striped table-bordered table-condensed"
+            style="width: 900px;"
+          >
+            <tr>
+              <td style="width: 200px;">Mailing Address</td>
+              <td>Provide mailing address.</td>
+            </tr>
+            <tr>
+              <td style="width: 200px;">Other Address</td>
+              <td>Provide alternate address.</td>
+            </tr>
+          </table>
+
+          <p>
+            <b>Company Logo</b>: You can browse and upload Portfolio Company's
+            logo.
+          </p>
+          <br />
+          <p>
+            <b>Company Picture</b>: You can browse and upload Portfolio
+            Company's Picture.
+          </p>
+
+          <p><br /></p>
+          <p>
+            <b>Comments Information</b>: You can add comments to the portfolio.
+          </p>
+
+          <p><br /><br /></p>
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

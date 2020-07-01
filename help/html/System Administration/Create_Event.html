@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+  <head>
+    <title>Create Event - Sumantra Solutions Help</title>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="../css/crmhelpstyle1.css" />
+   </head>
+
+  <body>
+    <!-- Navigation Bar -->
+
+    <!-- Start of Main Page -->
+
+    <div class="popupContainer">
+      <div class=" ">
+        <article class=" ">
+          <!-- Page Header -->
+
+          <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            <!-- Page Content -->
+
+            <p>
+              You can automatically create calendar events based on workflow.
+              The following workflow is supposed to create an event when Deal
+              Stage becomes Screened.
+            </p>
+            <p>
+              <br />
+              1. Select <b>Deal Pipeline</b> in <b>Select Module</b> and my
+              condition will be
+              <b>Until the first time the condition is true</b>
+            </p>
+            <p>
+              <br />
+              <img
+                alt="EventsWorkflows.png"
+                class="images"
+                src="../../images/System Administration/Create_Event_1.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>
+              2. The goal is to create events only when deal stage is screened;
+              so, my condition will be <code>Deal Stage is Screened</code>. If
+              condition is met, workflow will be triggered on the record. Once
+              executed, workflow doesn't trigger action on that record again.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="DefiningConditionsWorkflow.png"
+                class="images"
+                src="../../images/System Administration/Create_Event_2.png"
+              />
+            </p>
+            <p>
+              <br />
+              3. Click <b>Save</b>
+            </p>
+            <p><br /></p>
+            <p>
+              4. Click on <b>New Task</b> button and select <b>Create Event</b>.
+              Provide Task Title; this is only for your reference.
+              <b>Event Name</b>, <b>Description</b>, <b>Status</b>, <b>Type</b>,
+              <b>Start Time</b>, <b>Enable Repeat</b> are displayed in the event
+              that is created when workflow is executed. <b>Start Date</b> and
+              <b>End Date</b> cannot be defined statically. They are defined
+              basing upon either created time or modified time of the parent
+              record (Deal Pipeline in our example).
+            </p>
+            <p>
+              <br />
+              <img
+                alt="CreateEventWorkflows.png"
+                class="images"
+                src="../../images/System Administration/Create_Event_3.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>5. Click <b>save</b></p>
+            <br />
+
+            <!-- End of Page Content -->
+          </div>
+        </article>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <!-- End of Main Page -->
+
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+<p><a rel="nofollow" target="_blank" class="external text" href="http://www.sumantratech.com/">www.sumantratech.com</a></p>
+</footer> -->
+  </body>
+</html>

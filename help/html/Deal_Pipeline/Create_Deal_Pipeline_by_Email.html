@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Deal Manually</title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+     
+  </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Deal Pipeline</h2>
+    <div class="sidenavNew">
+      <button class="accordion">
+        <a href="./Create_Deal_Pipeline.html">Create a Deal</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Create_Deal_Pipeline.html">
+              Create a Deal Manually
+            </a>
+          </li>
+          <li class="nav-link" style="background: var(--link-bgColor);">
+            <a
+              style="color: var(--link-color);"
+              href="Create_Deal_Pipeline_by_Email.html"
+            >
+              Create a Deal by Email
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Quickly_Create_Deal_Pipeline.html">
+              Quickly Create a Deal
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accord">
+        <a href="Deal_Pipeline_Information_Tab.html"
+          >Deal Pipeline Information</a
+        >
+      </button>
+
+      <button class="accord">
+        <a href="Additional_Information_Tab.html">Additional Information</a>
+      </button>
+      <button class="accord">
+        <a href="Notes_Tab.html">Notes</a>
+      </button>
+
+      <button class="accordion">
+        <a href="More_Information_Tab.html">More Information</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./more_information_calendar.html">
+              Activities
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_email_templates.html">
+              Email
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_documents.html">
+              Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accordion">
+        <a href="Edit_or_Delete_Deal_Pipeline.html"
+          >Manage Records in Deal Pipeline</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="Edit_or_Delete_Deal_Pipeline.html">
+              Edit or Delete Deals</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Manage_Records_in_Deal_Pipeline.html">
+              Manage Deal Pipeline</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Currency_Conversion.html"> Apply Currency conversion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+
+          <h3>
+            <span class="mw-headline" id="Create_a_Deal"
+              >Deal Creation from Email
+            </span>
+          </h3>
+
+          <hr />
+
+          <p>
+            User can create Deal by just sending an email in specified format to
+            a configured email address like dealbyemail@xyz.com.
+          </p>
+          <ol>
+            <li>
+              <b>Sender:</b> Has to be sent from an email address that exists as
+              a user in the system e.g. iptest@sumantratech.com.
+            </li>
+            <li>To create a Deal from email <b>Subject</b> is mandatory.</li>
+            <ul>
+              +Deal Name => Focus -> yes
+            </ul>
+            <ul>
+              -Deal Name => Focus -> no
+            </ul>
+            <ul>
+              Deal Name => Add attachments
+            </ul>
+            <p>
+              Subject of email is "+Deal Name" then Deal is created with value
+              of Focus field 'yes'.
+            </p>
+            <p>
+              Subject of email is "-Deal Name" then Deal is created with value
+              of Focus field 'no'.
+            </p>
+            <p>
+              Subject of email like "Deal Name" with attachments is used to add
+              documents to existing Deal with name 'Deal Name'.
+            </p>
+            <li>
+              <b>Body:</b> Field Name used in Body seprated by colon, after
+              colon give the value of field. Like [Field Name]: [Field Value]
+            </li>
+            <ul>
+              Theme:
+            </ul>
+            <ul>
+              Date Opened:
+            </ul>
+            <ul>
+              Source:
+            </ul>
+            <ul>
+              Organization:
+            </ul>
+            <ul>
+              Sector:
+            </ul>
+            <ul>
+              Deal Currency:
+            </ul>
+            <ul>
+              Total Deal Size (m) (OR Total Size):
+            </ul>
+            <ul>
+              Our Deal Size (m) (OR Size):
+            </ul>
+            <ul>
+              etc.
+            </ul>
+            <li><b>Rules:</b></li>
+            <ul>
+              i) Date format -> yyyy-mm-dd.
+            </ul>
+            <ul>
+              ii) Field names in body should either match the screen names or we
+              can define aliases in a backend table (as mentioned in labels
+              above with OR).
+            </ul>
+            <ul>
+              iii) If folder not specified then attachments go to 'Default'
+              folder.
+            </ul>
+            <ul>
+              iv) If field name doesn't match then its ignored.
+            </ul>
+            <ul>
+              v) If field value doesn't match a picklist value then it goes to
+              comments.
+            </ul>
+            <ul>
+              vi) If Assigned To group is not specified then deal gets assigned
+              to the person that has sent the email.
+            </ul>
+            <ul>
+              vii) Email in normal text format or bulleted format both are
+              acceptable.
+            </ul>
+            <li><b>Notifications:</b></li>
+            <ul>
+              User will get a notification after successful creation of Deal as
+              well as in case of any failure. Notification will be sent on the
+              email address that was used to send the email.
+            </ul>
+          </ol>
+
+          <p><br /></p>
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      //   sessionStorage.setItem("moduleTopicName", "Create Contacts");
+      //   sessionStorage.setItem(
+      //     "moduleTopicPageLink",
+      //     "./creating_contacts_manually.html"
+      //   );
+      //   sessionStorage.setItem("subTopicName", "Create Contacts Manually");
+      //   sessionStorage.setItem(
+      //     "subTopicPageLink",
+      //     "./creating_contacts_manually.html"
+      //   );
+      l = 0;
+      num = 0;
+      let p = acc[0].nextElementSibling;
+      p.style.transition = "none";
+      p.style.maxHeight = p.scrollHeight + "px";
+      acc[0].classList.toggle("active");
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

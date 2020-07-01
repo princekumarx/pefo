@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+  </head>
+
+<body>
+    <nav class="navbar"></nav>
+    <h2>System Administration </h2>
+    <div class="sidenavNew">
+
+        <button class="accordion" style="display:none">
+            <a href="./Create_Investor.html"> </a>
+        </button>
+        <button class="accord">
+            <a href="./Users.html">Users</a>
+        </button>
+
+
+        <button class="accord">
+            <a href="./Profiles.html">Profiles</a>
+        </button>
+        <button class="accord">
+            <a href="./Roles.html">Roles</a>
+        </button>
+        <button class="accord">
+            <a href="./Groups.html">Groups</a>
+        </button>
+        <button class="accord">
+            <a href="Sharing_Profiles.html">Sharing Profiles</a>
+        </button>
+        <button class="accord" >
+            <a  href="./Picklist_Editor.html">Picklist Editor</a>
+        </button>
+        <button class="accord" style="background: var(--link-bgColor);">
+            <a style="color: var(--link-color);" href="./Picklist_Dependency_Setup.html">Picklist Dependency Setup</a>
+        </button>
+        <button class="accord">
+            <a href="./Menu_Editor.html">Menu Editor</a>
+        </button>
+        <button class="accord">
+            <a href="./Email_Templates.html">Email Templates</a>
+        </button>
+        <button class="accord">
+            <a href="./Company_Details.html">Company Details</a>
+        </button>
+        <button class="accord">
+            <a href="./Outgoing_Server.html">Outgoing Server</a>
+        </button>
+        <button class="accord">
+            <a href="./Workflows.html">Workflows</a>
+        </button>
+        <button class="accord">
+            <a href="./Audit_Trails.html">Audit Trails</a>
+        </button>
+        <button class="accord">
+            <a href="./User_Login_History.html">User Login History</a>
+        </button>
+        <button class="accord">
+            <a href="./Configuration_Editor.html">Configuration Editor</a>
+        </button>
+
+
+
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+        <div class="row-fluid">
+            <article class="span12">
+                <div class="page-header"></div>
+                <h3>
+                    <span class="mw-headline" id="Create_a_Deal">Picklist Dependency Setup
+                    </span>
+                </h3>
+          
+<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+    <!-- Page Content -->
+    <p>Picklist dependency setup offers you a seamless way of selecting only desired values from the picklist fields.
+        You'll need to set-up dependency between two picklist fields (source and target picklist fields). By selecting a
+        value in source picklist field, you'll have complete control over the target picklist fields. </p>
+    <p><br />
+        For instance, we will consider a real time example. I have two different fields in Deal Pipeline module. Deal
+        Sector - source field, and Deal Sub Sector - target field. When a value is selected in Deal Sector field, only
+        values related to the selected sector should be displayed in Deal Sub Sector field. Now let's begin.
+    </p>
+    <p><br /></p>
+    <h3> <span class="mw-headline" id="Configuring_Picklist_Dependency"> Configuring Picklist Dependency </span></h3>
+    <hr />
+    <p>Before we set up picklist dependency, we'll have to specify module, source field, and target field. Entire
+        process is made simple and straight forward.</p>
+    <p>Follow few simple steps to setup picklist dependency</p>
+    <ol>
+        <li>Click gear <img alt="Setting.png" class="icons" src="../../images/System Administration/Picklist_Dependency_Setup_1.png" width="15" height="15" /> icon in the top
+            right</li>
+        <li>Click <b>CRM Settings</b></li>
+        <li>Click <b>Picklist Dependency Setup</b> under <b>Studio</b>.</li>
+        <li>You will see modules in a list view.</li>
+        <li>Click on edit icon for any module (Deal Pipeline in our case).</li>
+        <li>Select source field and target fields from the dropdown. </li>
+    </ol>
+    <p><img alt="PickListDependency.png" class="images" src="../../images/System Administration/Picklist_Dependency_Setup_2.png" width="500" /></p>
+    <dl>
+        <dd>6. All available values in source picklist field and target field are displayed. You can view all source
+            picklist values in header section. </dd>
+    </dl>
+    <p><img alt="PickListDependencyFields.png" class="images" src="../../images/System Administration/Picklist_Dependency_Setup_3.png" width="600" /></p>
+    <dl>
+        <dd>7. Now pick desired target field values under corresponding source field values(headers). </dd>
+    </dl>
+    <div class="alert alert-info">
+        <p><strong>Notes!</strong>
+            Values in blue are selected and values in grey are unselected.
+        </p>
+    </div>
+    <dl>
+        <dd>8. Click <b>Save</b></dd>
+    </dl>
+    <h3> <span class="mw-headline" id="Working"> Working </span></h3>
+    <hr />
+    <p>After successfully setting up picklist dependency, you can select a value in source field to view only
+        corresponding values in target field. From the above example, upon selecting a Deal Sector, we should only be
+        able to see selected fields in Deal Sub Sector. </p>
+    <p><br />
+        <img alt="PicklistContacts.png" class="images" src="../../images/System Administration/Picklist_Dependency_Setup_4.jpg" width="900" />
+    </p>
+    <p><br />
+        This gives you the flexibility to explicitly select appropriate values and eliminates the scope for erroneous
+        and inaccurate data.
+    <p><br /></p>
+    </p>
+    <!-- End of Page Content -->
+</div>
+                <!-- End of Page Content -->
+
+
+            </article>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+
+        sessionStorage.setItem("subTopicName", " ");
+        sessionStorage.setItem("subTopicPageLink", " ");
+        sessionStorage.setItem("greater", false);
+
+
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+</body>
+
+</html>

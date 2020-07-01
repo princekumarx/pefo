@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+      
+</head>
+
+<body>
+    <nav class="navbar"></nav>
+    <h2>System Administration </h2>
+    <div class="sidenavNew">
+
+        <button class="accordion" style="display:none">
+            <a href="./Create_Investor.html"> </a>
+        </button>
+        <button class="accord">
+            <a href="./Users.html">Users</a>
+        </button>
+
+
+        <button class="accord">
+            <a href="./Profiles.html">Profiles</a>
+        </button>
+        <button class="accord" >
+            <a  href="./Roles.html">Roles</a>
+        </button>
+        <button class="accord" >
+            <a  href="./Groups.html">Groups</a>
+        </button>
+        <button class="accord" style="background: var(--link-bgColor);">
+            <a style="color: var(--link-color);" href="Sharing_Profiles.html">Sharing Profiles</a>
+        </button>
+        <button class="accord">
+            <a href="./Picklist_Editor.html">Picklist Editor</a>
+        </button>
+        <button class="accord">
+            <a href="./Picklist_Dependency_Setup.html">Picklist Dependency Setup</a>
+        </button>
+        <button class="accord">
+            <a href="./Menu_Editor.html">Menu Editor</a>
+        </button>
+        <button class="accord">
+            <a href="./Email_Templates.html">Email Templates</a>
+        </button>
+        <button class="accord">
+            <a href="./Company_Details.html">Company Details</a>
+        </button>
+        <button class="accord">
+            <a href="./Outgoing_Server.html">Outgoing Server</a>
+        </button>
+        <button class="accord">
+            <a href="./Workflows.html">Workflows</a>
+        </button>
+        <button class="accord">
+            <a href="./Audit_Trails.html">Audit Trails</a>
+        </button>
+        <button class="accord">
+            <a href="./User_Login_History.html">User Login History</a>
+        </button>
+        <button class="accord">
+            <a href="./Configuration_Editor.html">Configuration Editor</a>
+        </button>
+
+
+ 
+ 
+    </div>
+    <!-- this is popup for container -->
+    <div class="pop-container">
+        <div id="popup">
+            <div class="closebtn">
+                <h3 class="header"></h3>
+                <div class="close" onclick="closeNav()">&times;</div>
+            </div>
+    
+            <div id="content"></div>
+        </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+        <div class="row-fluid">
+            <article class="span12">
+                <div class="page-header"></div>
+                <h3>
+                    <span class="mw-headline" id="Create_a_Deal">Sharing Profiles
+                    </span>
+                </h3>
+                <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+                    <!-- Page Content -->
+                    <p>Sharing Rules are used to configure data sharing rules across users in role hierarchy. In PE Front Office, the
+                        default access for CRM records is set to public, which enables everyone to see all records. When sharing rules
+                        are set to private, users can only view records assigned to them and records of users below them in role
+                        hierarchy. Sharing Rules also help you to set custom sharing rules to share data with specific role, role and
+                        subordinate, and group. </p>
+                    <p><br /></p>
+                    <div class="alert alert-info">
+                        <p><strong>Notes!</strong>
+                            Admin users can view all records irrespective of roles, profiles and sharing rules
+                        </p>
+                    </div>
+                
+                    <h3> <span class="mw-headline" id="Features"> Features </span></h3>
+                    <p>Sharing Rules enables you to configure following permissions across users in PE Front Office. </p>
+                    <p><br /></p>
+                    <table class="table table-bordered" style="width: 800px;">
+                        <tr>
+                            <td style="width: 20px;">1</td>
+                            <td> <b>Private</b></td>
+                            <td>
+                                <p>Users can only view records assigned to them, and records that are assigned to users with a role
+                                    below them.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">2</td>
+                            <td><b>Public Read only</b></td>
+                            <td>
+                                <p>Everyone can view all records but cannot modify and delete the records.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">3</td>
+                            <td><b>Public Read, Create/Edit</b></td>
+                            <td>
+                                <p>Everyone can view and modify all records but cannot delete the records.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 20px;">4</td>
+                            <td><b>Public: Read, Create/Edit, Delete</b></td>
+                            <td>
+                                <p>Everyone can view, modify and delete every one else's records.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p><br /></p>
+                    <h3> <span class="mw-headline" id="Configuring_organization-wide_sharing_rules"> Configuring organization-wide
+                            sharing rules </span></h3>
+                    <hr />
+                    <p>This feature enables you to configure sharing rules across your organization. The default sharing rules offered
+                        by PE Front Office are set to Public. However, you can change the sharing rules according to your requirements.
+                    </p>
+                    <p><br />
+                        Follow few simple steps to configure sharing rules
+                    </p>
+                    <ol>
+                
+                        <li>Click gear icon <img alt="Setting.png" class="icons" src="../../images/System Administration/Sharing_Profiles_1.png" width="15" height="15" /> in the upper
+                            right.</li>
+                        <li>Click <b>CRM Settings</b>.</li>
+                        <li>Under <b>Users and Access Management</b> click on <b>Sharing Access</b>.</li>
+                        <li>Click on <b>Change Privileges</b> button.</li>
+                        <img class="images" src="../../images/System Administration/Sharing_Profiles_2.png" width="900" />
+                        <li>Module list with permission dropdown next to each will appear.</li>
+                        <img class="images" src="../../images/System Administration/Sharing_Profiles_3.png" width="900" />
+                        <li>Choose permissions for the modules and click <b>Save Permissions</b>.</li>
+                        <li>Click on <b>Recalculate</b> button for changes to take effect.</li>
+                        <img class="images" src="../../images/System Administration/Sharing_Profiles_4.png" width="900" />
+                
+                    </ol>
+                    <p><br />
+                        Click  
+                        <span data-href="./Permissions_Usecases.html" id="here" data-header="Permissions Usecases"  
+                            title="Permissions Usecases">here</span> to view how sharing rules and
+                        profiles affect your user privileges.
+                    </p>
+                    <p><br /></p>
+                    <h3> <span class="mw-headline" id="Setting_up_custom_sharing_rules"> Setting up custom sharing rules </span></h3>
+                    <hr />
+                    <p>Custom sharing rules are used to allow subordinates to perform operations on superiors' records. In other words,
+                        you, as a user on upper hierarchy, can grant access to your subordinates to view your records. This can also be
+                        achieved by setting up Sharing Rules to Public, but the intention here is to only grant access to selected
+                        group, role and, role and subordinates that are below you in role hierarchy. </p>
+                    <p><br />
+                        For instance, Sales Manager is on a role hierarchy above Sales Person. As sharing rules are set to private,
+                        Sales Manager can view Sales Person's records but not the other way around. Sales Manager wants to give access
+                        on his records to his Sales Person. Now setting sharing rules to Public will let everyone view Sales Manager's
+                        records. Setting up custom sharing rules gives Sales Manager the flexibility to exclusively grant access to
+                        Sales Person role.
+                    </p>
+                    <p><br />
+                        Follow few simple steps to define custom sharing rules
+                    </p>
+                    <p><br /></p>
+                
+                    <ol>
+                
+                        <li>Click gear icon <img alt="Setting.png" class="icons" src="../../images/System Administration/Sharing_Profiles_5.png" width="15" height="15" /> in the upper
+                            right.</li>
+                        <li>Click <b>CRM Settings</b>.</li>
+                        <li>Under <b>Users and Access Management</b> click on <b>Sharing Access</b>.</li>
+                        <li>Scroll down to <b>Custom Sharing Rules</b> section and click <b>Add Privilege</b> button next to module.
+                        </li>
+                        <img class="images" src="../../images/System Administration/Sharing_Profiles_6.png" width=900" />
+                        <li>You will see an <b>Add Custom Privilege</b> popup.</li>
+                        <img class="images" src="../../images/System Administration/Sharing_Profiles_7.png" />
+                        <li>In Step1, select a value to specify whose records should be accessed (Superior).</li>
+                        <li>In Step2, select a value to specify who will be accessing the records of superior (Subordinate).</li>
+                        <li>Select the privileges which Subordinate will have on Superior's records.</li>
+                        <li>Click on <b>Add Rule</b>.</li>
+                    </ol>
+                    <p><br /></p>
+                    <div class="alert alert-info">
+                        <p><strong>Notes!</strong>
+                            You will have to define custom sharing rules for every module individually.
+                        </p>
+                    </div>
+
+                    <!-- End of Page Content -->
+
+
+            </article>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+
+        sessionStorage.setItem("subTopicName", " ");
+        sessionStorage.setItem("subTopicPageLink", " ");
+        sessionStorage.setItem("greater", false);
+
+
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Deal Manually</title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+  </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Deal Pipeline</h2>
+    <div class="sidenavNew">
+      <button class="accordion">
+        <a href="./Create_Deal_Pipeline.html">Create a Deal</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link" style="background: var(--link-bgColor);">
+            <a
+              style="color: var(--link-color);"
+              href="./Create_Deal_Pipeline.html"
+            >
+              Create a Deal Manually
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="Create_Deal_Pipeline_by_Email.html">
+              Create a Deal by Email
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Quickly_Create_Deal_Pipeline.html">
+              Quickly Create a Deal
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accord">
+        <a href="Deal_Pipeline_Information_Tab.html"
+          >Deal Pipeline Information</a
+        >
+      </button>
+
+      <button class="accord">
+        <a href="Additional_Information_Tab.html">Additional Information</a>
+      </button>
+      <button class="accord">
+        <a href="Notes_Tab.html">Notes</a>
+      </button>
+
+      <button class="accordion">
+        <a href="More_Information_Tab.html">More Information</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./more_information_calendar.html">
+              Activities
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_email_templates.html">
+              Email
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_documents.html">
+              Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accordion">
+        <a href="Edit_or_Delete_Deal_Pipeline.html"
+          >Manage Records in Deal Pipeline</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="Edit_or_Delete_Deal_Pipeline.html">
+              Edit or Delete Deals</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Manage_Records_in_Deal_Pipeline.html">
+              Manage Deal Pipeline</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Currency_Conversion.html"> Apply Currency conversion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+
+          <h3>
+            <span class="mw-headline" id="Create_a_Deal">Create a Deal </span>
+          </h3>
+          <ul class="topic-links">
+            <li>
+              <a class="pageTopicLink" href="Create_Deal_Pipeline.html">
+                Create a Deal Manually
+              </a>
+            </li>
+            <li>
+              <a
+                class="pageTopicLink"
+                href="Create_Deal_Pipeline_by_Email.html"
+              >
+                Create a Deal by Email
+              </a>
+            </li>
+
+            <li>
+              <a class="pageTopicLink" href="Quickly_Create_Deal_Pipeline.html">
+                Quickly Create a Deal
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <h4 class="h4">
+            <span class="mw-headline" id="Create_Deal_Pipeline"
+              >Create Deal Pipeline
+            </span>
+          </h4>
+
+          <p>To create Deal Pipeline</p>
+          <ol>
+            <li>Click on <b>Deal Pipeline</b> in the main menu.</li>
+            <li>
+              Click on <b>Create Deal Pipeline</b> Icon (<img
+                class="icons"
+                src="../../images/deal_pipeline/Create_Deal_Pipeline_1.png"
+              />) at the top.
+            </li>
+            <li>You will see <b>Create New Deal Pipeline</b> window.</li>
+            <li>Enter all mandatory fields and click <b>Save</b>.</li>
+            <img
+              class="images"
+              src="../../images/deal_pipeline/Create_Deal_Pipeline_2.png"
+              width="900"
+            />
+            <li>
+              <p>
+                Deal Pipeline will be created and a new window will appear
+                containing 4 tabs - <b>Deal Pipeline Information</b>,
+                <b>Additional Information</b>, <b>Notes</b> and
+                <b>More Information</b>. You can fill all details at the time of
+                creating the Deal Pipeline or fill the remaining details later
+                by clicking the Deal Pipeline name in the list view.
+              </p>
+            </li>
+            <img
+              class="images"
+              src="../../images/deal_pipeline/Create_Deal_Pipeline_3.png"
+              width="900"
+            />
+          </ol>
+
+          <p><br /></p>
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      localStorage.setItem("moduleName", "Deal Pipeline");
+      localStorage.setItem("modulePageLink", "./Create_Deal_Pipeline.html");
+      num = 0;
+      let p = acc[0].nextElementSibling;
+      p.style.transition = "none";
+      p.style.maxHeight = p.scrollHeight + "px";
+      acc[0].classList.toggle("active");
+      sessionStorage.setItem("noBgColor", true);
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

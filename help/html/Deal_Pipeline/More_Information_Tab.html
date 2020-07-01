@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Information</title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+     
+   </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Deal Pipeline</h2>
+    <div class="sidenavNew">
+      <button class="accordion">
+        <a href="./Create_Deal_Pipeline.html">Create a Deal</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Create_Deal_Pipeline.html">
+              Create a Deal Manually
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="Create_Deal_Pipeline_by_Email.html">
+              Create a Deal by Email
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Quickly_Create_Deal_Pipeline.html">
+              Quickly Create a Deal
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accord">
+        <a href="Deal_Pipeline_Information_Tab.html"
+          >Deal Pipeline Information</a
+        >
+      </button>
+
+      <button class="accord">
+        <a href="Additional_Information_Tab.html">Additional Information</a>
+      </button>
+      <button class="accord">
+        <a href="Notes_Tab.html">Notes</a>
+      </button>
+
+      <button class="accordion" style="background: var(--link-bgColor);">
+        <a style="color: var(--link-color);" href="More_Information_Tab.html"
+          >More Information</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./more_information_calendar.html">
+              Activities
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_email_templates.html">
+              Email
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_documents.html">
+              Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accordion">
+        <a href="Edit_or_Delete_Deal_Pipeline.html"
+          >Manage Records in Deal Pipeline</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="Edit_or_Delete_Deal_Pipeline.html">
+              Edit or Delete Deals</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Manage_Records_in_Deal_Pipeline.html">
+              Manage Deal Pipeline</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Currency_Conversion.html"> Apply Currency conversion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+
+          <h3>
+            <span class="mw-headline" id="More_Information.3F"
+              >More Information</span
+            >
+          </h3>
+          <ul class="topic-links">
+            <li>
+              <a class="pageTopicLink" href="./more_information_calendar.html">
+                Activities
+              </a>
+            </li>
+            <li>
+              <a
+                class="pageTopicLink"
+                href="./more_information_email_templates.html"
+              >
+                Email
+              </a>
+            </li>
+            <li>
+              <a class="pageTopicLink" href="./more_information_documents.html">
+                Documents
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <p>
+            This tab shows all-round view of relations of Deal Pipeline module
+            with other modules. You can keep track of following details in Deal
+            Pipeline module
+          </p>
+          <br />
+          <img class="images"src="../../images/deal_pipeline/More_Information_Tab_1.png" />
+          <table class="table table-bordered">
+            <tr>
+              <td>Activities</td>
+              <td>
+                To view or create
+                <a
+                  class="linkInFile"
+                  data-title="Activities"
+                  href="./more_information_calendar.html"
+                  >Events</a
+                >
+                and
+                <a
+                  class="linkInFile"
+                  data-title="Activities"
+                  href="./more_information_calendar.html"
+                  >To-dos</a
+                >
+                on a Deal Pipeline record
+              </td>
+            </tr>
+            <tr>
+              <td>Emails</td>
+              <td>
+                To view the
+                <a
+                  class="linkInFile"
+                  data-title="Email"
+                  href="./more_information_email_templates.html"
+                  >Emails</a
+                >
+                sent to Deal Pipeline record
+              </td>
+            </tr>
+
+            <tr>
+              <td>Activity History</td>
+              <td>
+                To view all
+                <a
+                  class="linkInFile"
+                  data-title="Activities"
+                  href="./more_information_calendar.html"
+                  >Events</a
+                >
+                and
+                <a
+                  class="linkInFile"
+                  data-title="Activities"
+                  href="./more_information_calendar.html"
+                  >To-dos</a
+                >
+                that are completed or status changed as held
+              </td>
+            </tr>
+            <tr>
+              <td>Documents</td>
+              <td>
+                To view the <a class="linkInFile"
+                  data-title="Documents" href="./more_information_documents.html"">Documents</a> related to
+                the Deal Pipeline record
+              </td>
+            </tr>
+          </table>
+          <p><br /></p>
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      sessionStorage.setItem("subTopicName", " ");
+      sessionStorage.setItem("subTopicPageLink", " ");
+      sessionStorage.setItem("greater", false);
+    </script>
+   
+    <script>
+      console.log(acc[0]);
+      num = 1;
+      let p = acc[1].nextElementSibling;
+      p.style.transition = "none";
+      p.style.maxHeight = p.scrollHeight + "px";
+      acc[1].classList.toggle("active");
+    </script>
+     <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

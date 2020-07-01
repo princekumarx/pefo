@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <title>Custom Filters - PE Front Office Help</title>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="../css/crmhelpstyle1.css" />
+    <link rel="stylesheet" href="../css/crmhelpstyle2.css?303" media="screen" /> -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+
+    <!-- Start of Main Page -->
+    <div class="popupContainer">
+      <div class="">
+        <article class="">
+          <!-- Page Header -->
+          <!-- <div class="page-header">
+            <h1>Creating Custom Filters &raquo; <small></small></h1>
+          </div> -->
+          <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            <!-- Page Content -->
+            <p>
+              Filters, or views, are used to separate desired records from the
+              stack of other records, and capture them in a different bucket.
+              For instance, you can quickly filter all the records for a sector
+              or sub sector. You can also perform operations on the filtered
+              records like mass edit, delete, sending emails etc.
+            </p>
+            <p><br /></p>
+            <p>
+              <img
+                class="images"
+                alt="FilterDiagram.png"
+                src="../../images/crm_images/creating_custome_filters_1.png"
+                width="100%"
+                height="492"
+              />
+            </p>
+            <p><br /></p>
+            <p>
+              This tutorial is designed to explain how filters are created in PE
+              Front Office. We'll explain you how filters can be created in
+              Contacts module. You can follow the same steps to create filters
+              on other modules.
+            </p>
+            <p><br /></p>
+            <ol>
+              <li>
+                Click <b>Contacts</b> tab. The process is same for other
+                modules: Organizations, etc.
+              </li>
+              <li>
+                Click <b>Create Filter</b> link located above the List view.
+              </li>
+            </ol>
+            <p>
+              <br />
+              <a href="" class="image"
+                ><img
+                  class="images"
+                  src="../../images/crm_images/creating_custome_filters_2.png"
+                  width="100%"
+              /></a>
+            </p>
+            <p><br /></p>
+            <dl>
+              <dd>
+                3. You'll be navigated to create views of a filter's page.
+                Provide a label to your filter in <b>View Name</b> field
+              </dd>
+              <dd>
+                4. Select desired columns you would like to see in a custom
+                view. You can only select up to 9 columns.
+              </dd>
+            </dl>
+            <p>
+              <img
+                class="images"
+                src="../../images/crm_images/creating_custome_filters_3.png"
+                width="100%"
+              />
+            </p>
+            <p><br /></p>
+            <dl>
+              <dd>
+                5. You'll need to specify conditions to filter only specific
+                entities that you would like to have in your custom view. The
+                process of applying conditions to filter desired records has
+                been made simple.
+              </dd>
+            </dl>
+            <p>
+              <br />
+              <img
+                class="images"
+                alt="ContactFilter-AdvancedSearch.png"
+                src="../../images/crm_images/creating_custome_filters_4.png"
+                width="100%"
+                height=""
+              />
+            </p>
+            <p>
+              <br />
+              1. <b>All Conditions&#160;:</b> Filters records based on AND
+              condition.
+            </p>
+            <pre>
+For instance, 
+Condition 1
+AND
+Condition 2
+AND
+Condition 3
+
+Displays the results if and only if ALL conditions are matched. If one condition is failed, other queries will not be executed.</pre
+            >
+            <p>
+              2. <b>Any Conditions&#160;:</b> Filters records based on OR
+              condition.
+            </p>
+            <pre>
+For instance, 
+Condition 1
+OR
+Condition 2
+OR
+Condition 3
+
+Displays the results if at-least ONE condition is matched. If one query is failed, other queries will be executed.</pre
+            >
+            <p><br /></p>
+            <div class="alert alert-info">
+              <p><strong>Notes!</strong></p>
+              <ol>
+                <li>
+                  By default, AND condition is enabled between
+                  <b>ALL conditions</b> and <b>ANY conditions</b>. This will
+                  help you in grouping the two conditions, all together.
+                </li>
+                <li>
+                  You can also filter the records on custom and default date
+                  fields. The conditions are dynamic. For instance,
+                  <b>Today</b> as filter condition will display all the records
+                  on current day. It will not display the same records tomorrow.
+                  It will display the records of present day instead.
+                </li>
+                <li>
+                  You can provide existing or custom criteria to filter records.
+                </li>
+              </ol>
+            </div>
+            <p><br /></p>
+            <h3>
+              <span class="mw-headline" id="Providing_Permissions">
+                Providing Permissions
+              </span>
+            </h3>
+            <hr />
+            <p>
+              Now that you've successfully completed creating a filter, it's
+              time to fit it to your business requirements. You have a wide
+              variety of options to get the most out of the filter you've
+              created.
+            </p>
+            <p>
+              <br />
+              <img
+                class="images"
+                alt="ContactFilter-Followup.png"
+                src="../../images/crm_images/creating_custome_filters_5.png"
+                width="100%"
+                height=""
+              />
+            </p>
+            <p><br /></p>
+            <ul>
+              <li><b>Set as Default</b></li>
+            </ul>
+            <dl>
+              <dd>
+                You might have thousands of records in your PE Front Office. You
+                don't deal with all of them. You can create filters and set the
+                filter default so that you can view only most important records.
+                By clicking on the check-box, the filter will be made default
+                for you and other users in your PE Front Office account.
+              </dd>
+            </dl>
+            <ul>
+              <li><b>List in Metrics</b></li>
+            </ul>
+            <dl>
+              <dd>
+                You can have details of your filter right on your home page,
+                too. Enable the check-box to view details of your filter in
+                <b>Key Metrics</b> widget on the home page.
+              </dd>
+            </dl>
+            <ul>
+              <li><b>Set as Public</b></li>
+            </ul>
+            <dl>
+              <dd>
+                Enable the check-box to make the filter visible for all users
+                across your PE Front Office account. If a non-admin user enables
+                this option, the filter will be in a pending state until admin
+                approves it. Admin users can approve the filter by clicking on
+                <i class="icon-ok"></i> icon next to the filter.
+              </dd>
+            </dl>
+            <dl>
+              <dd>
+                6. Once you're done, click on <b>Save</b> button. I hope that
+                your filter has delivered results for you.
+              </dd>
+            </dl>
+            <hr />
+            <div style="text-align: left;">
+              <p><br /></p>
+            </div>
+            <!-- End of Page Content -->
+          </div>
+        </article>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+    <!-- End of Main Page -->
+    <!-- Footer -->
+    <!-- <footer class="footer">
+      <p style="text-align:center !important;">
+        Copyright @ 2013.
+        <a
+          rel="nofollow"
+          target="_blank"
+          class="external text"
+          href="http://www.sumantratech.com/"
+          >Sumantra Tech Solutions </a
+        >Private Limited. All Rights Reserved.
+      </p>
+    </footer> -->
+    <script src="../../js/script.js"></script>
+  </body>
+</html>

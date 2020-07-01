@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+    <title>Import Contacts from external source</title>
+    <meta name="keywords" content="Import Contacts from existing source">
+    <meta name="description" content="If you have your data in .csv or .vcf format, you can import thousands of records instantly and
+    effectively. PE
+    Front Office supports importing data into different modules including Leads, Contacts,
+    Organizations,
+    Opportunities, etc.">
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+     
+    <!-- here resizing the main area -->
+    <style>
+ 
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+         
+    </nav>
+    <h2>CRM</h2>
+<div class="sidenavNew">
+    <button class="accordion">
+        <a href="creating_contacts_manually.html">Create Contacts</a>
+    </button>
+    <div class="panel">
+        <ul>
+            <li class="nav-link">
+                <a href="creating_contacts_manually.html#contact">
+                    Create Contacts Manually
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="Quickly_create_a_Contact_record.html#quicklyCreate">
+                    Quickly Create a Contact
+                </a>
+            </li>
+
+            <li class="nav-link" style="background: var(--link-bgColor);" >
+                <a style="color: var(--link-color);" href="Import_Contacts_from_external_source.html ">
+                    Import Contacts from External Source
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="accord">
+        <a href="Export_Contacts_to_a_spreadsheet.html">Export Contacts to a Spreadsheet</a>
+    </button>
+
+    <button class="accord">
+        <a href="Manage_records_in_Contacts_module.html">Manage Records in Contacts Module</a>
+    </button>
+
+    <button class="accordion">
+        <a href="Contact_More_Information.html">Contact: More Information</a>
+    </button>
+    <div class="panel">
+        <ul>
+            <li class="nav-link">
+                <a href="./contact_more_information_calendar.html">
+                    Activities
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="./contact_more_information_email_templates.html">
+                    Email
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="./contact_more_information_documents.html">
+                    Documents
+                </a>
+            </li>
+        </ul>
+    </div>
+    <button class="accordion">
+        <a href="Create_Organizations_manually.html">Create Organizations </a>
+    </button>
+    <div class="panel">
+        <ul>
+            <li class="nav-link">
+                <a href="Create_Organizations_manually.html">
+                    Create Organizations Manually</a>
+            </li>
+            <li class="nav-link">
+                <a href="Quickly_create_an_Organization_record.html">
+                    Quickly Create an Organization</a>
+            </li>
+            <li class="nav-link">
+                <a href="./Import_Organizations_from_external_source.html">
+                    Import Organizations from External Source</a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="accord">
+        <a href="./Export_Organizations_to_an_external_source.html">Export Organizations to an External Source</a>
+    </button>
+
+    <button class="accord">
+        <a href="./Manage_records_in_Organizations_module.html">Manage records in Organizations module</a>
+    </button>
+
+    <button class="accordion">
+        <a href="./Organization_More_Information.html">Organisation: More Information</a>
+    </button>
+    <div class="panel">
+        <ul>
+            <li class="nav-link">
+                <a href="./organizations_more_information_contacts.html">
+                    Contacts
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="./organizations_more_information_calendar.html">
+                    Activities
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="./organizations_more_information_email_templates.html">
+                    Email
+                </a>
+            </li>
+            <li class="nav-link">
+                <a href="./organizations_more_information_documents.html">
+                    Documents
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+     
+    <!-- this is popup for container -->
+    <div class="pop-container">
+        <div id="popup">
+            <div class="closebtn">
+                <h3 class="header"> </h3>
+                <div class="close" onclick="closeNav()">&times;</div>
+            </div>
+
+            <div id="content">
+
+            </div>
+        </div>
+    </div>
+    <!-- main area -->
+
+
+    <div class="container-fluid">
+        <div class="row-fluid" >
+            <article class="span12">
+
+                <div class="page-header">
+                     
+
+                </div>
+<h3>
+    <span class="mw-headline" id="import_contacts_from_existing_source"  >Import Existing Data
+    </span>
+</h3>
+<!-- <ul class="topic-links">
+    <li>
+        <a href="Import_Contacts_from_external_source.html#gettingStarted">Getting Started</a>
+    </li>
+    <li>
+        <a href="Import_Contacts_from_external_source.html#importResults">Import Results
+        </a>
+    </li>
+    <li>
+        <a href="Import_Contacts_from_external_source.html#notification">Notifications</a>
+    </li>
+</ul>
+               -->
+<hr />
+                <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+                    <!-- Page Content -->
+                    <p>If you have your data in .csv or .vcf format, you can import thousands of records instantly and
+                        effectively. PE
+                        Front Office supports importing data into different modules including Leads, Contacts,
+                        Organizations,
+                        Opportunities, etc.</p>
+                    <p><br /></p>
+                       
+                    <br />
+                    <div class="headline  " data-title="Check List">
+                        <h3> <span class="mw-headline" id="Check_List"> Check List </span></h3>
+                        <p><i class="icon-check"></i> <b>1.Mandatory Fields</b> <br /> Make sure your file addresses all
+                            mandatory fields.
+                            For instance, <b>Last Name</b> and <b>Assigned To</b> fields are mandatory in Contacts
+                            module. You cannot
+                            proceed with importing until or unless you have a value within these fields of your .csv
+                            file. If the value of
+                            mandatory fields is empty, they will be set to '????'.</p>
+                        <p><br />
+                            <i class="icon-check"></i> <b>2.File Size</b> <br />Make sure that the file to be imported
+                            does not exceed 5 MB
+                            size.
+                        </p>
+                        <p><br />
+                            <i class="icon-check"></i> <b>3.Permissions</b> <br />Admin users can disable Import access
+                            to non-admin users
+                            from profile level. If you can't find the Import option, you should contact your
+                            Administrator to enable Import
+                            permission for your profile.
+                        </p>
+                    </div>
+                    <p><br /></p>
+                    <div class="headline observe" data-title="Getting Started" id="gettingStarted">
+                        <h3> <span class="mw-headline" > Getting Started </span></h3>
+                        <hr />
+                        <p>This tutorial will walk you through different steps involved in importing records into your
+                            PE Front Office
+                            account. The entire process is simple and straightforward.</p>
+                        <p><br />
+                            Follow few simple steps to import data into PE Front Office
+                        </p>
+                        <ol>
+                            <li>Click [Module] tab. Eg: Leads, Contacts, etc.</li>
+                            <li>Click <b>Import icon <img class="icons"
+                                        src="../../images/crm_images/import_contacts_from_existing_source_1.png"
+                                        alt="1_csvImportIcon.png"></b> at the top.</li>
+                        </ol><br>
+                        <div class="headline"  >
+                            <h3> <span class="mw-headline" id="selectFile"> Step 1: Select File </span></h3>
+                            <hr />
+                            <p>In the first step of importing process, you'll need to browse and upload your import file
+                                from your machine. </p>
+                            <p><br />
+                                Here's how to select your.csv file.<p><br /></p>
+                            </p>
+                            <p>Click on the <b>Choose File</b> button, browse for desired file that is to be imported.
+                                Csv and vcf are the two
+                                file formats currently supported. </p>
+                            <p><br />
+                                <img class="images" alt="ImportingStep2.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_2.png" width="900"
+                                    height="" />
+                            </p>
+                        </div>
+                        <p><br /></p>
+                        <div class="headline"  >
+                            <h3> <span class="mw-headline" id="specifyFormat"> Step 2: Specify Format </span>
+                            </h3>
+                            <hr />
+                            <p>In the second step of importing process, you'll need to specify import file properties.
+                                The details of each
+                                property are explained below.</p>
+                            <p><br />
+                                <img class="images" alt="ImportingStep3.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_3.png" width="900"
+                                    height="" />
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">a. File Type</font>&#160;: PE Front Office supports two
+                                different file types
+                                namely: .csv and .vcf. Select the appropriate value from the <b>File Type</b> dropdown
+                                that describes the format
+                                of the file you've selected in Step:1. For instance, if you've uploaded .csv file,
+                                select .csv from <b>File
+                                    Type</b> field.
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">b. Character Encoding</font>&#160;: Make sure you select
+                                the right character set
+                                in which your import file has been encoded. You'll need to select right encoding of the
+                                file irrespective of the
+                                file contents.
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">c. Delimiter</font>&#160;: PE Front Office supports comma
+                                (,) and semicolon(;) as
+                                field delimiters. The fields in your .csv file are recognized only if they are separated
+                                with delimiters. More
+                                often, in a csv file, fields are separated with commas(,). To know more about
+                                delimiters, <span data-href="./Delimiters.html" id="here" data-header="Delimiter"
+                                    style="color:blue;" title="Delimiters">click here</span>
+
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">d. Header</font>&#160;: While importing, the header of
+                                your .csv file is compared
+                                with fields in PE Front Office. Having a header makes it easy for you to map fields.
+                                Click on <b>Has Header</b>
+                                checkbox if your file has a header. First row of your csv file is considered as a
+                                header. Please make sure that
+                                you uncheck the <b>Has Header</b> field if your file doesn't have a header. To know more
+                                about headers, <span data-href="./Import_Header.html" id="here" data-header="Header"
+                                    style="color:blue;" title="Import Header"> click here</span>
+                            </p>
+                            <p><br />
+
+                                <img class="images" alt="ImportHeaderFile4.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_4.png"
+                                    alt="ImportHeaderFile.png" width="900" height="" />
+                            </p>
+                        </div>
+                        <p><br /> </p>
+                        <div class="headline"  >
+                            <h3> <span class="mw-headline" id="duplicate"> Step 3: Duplicate
+                                    Record Handling </span>
+                            </h3>
+                            <hr />
+                            <p>This is an optional step and comes into play if you would enable the checkbox in Step-3
+                                of the import process.
+                                This option will help you in tracing out duplicate records. You can also configure the
+                                actions to be performed
+                                on duplicate records: skip, overwrite and merge. And finally, select desired fields for
+                                duplicate lookup by
+                                moving fields from the list of <b>Available Fields</b> to <b>Fields to be matched on</b>
+                                by using the right and
+                                left arrows.</p>
+                            <p><br />
+                                <img class="images" alt="ImportingStep5.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_5.png" al
+                                    height="" width="900" />
+                            </p>
+                            <p><br />
+                                Following actions can be performed on duplicate records
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">Skip</font>&#160;: After import, duplicate records are
+                                identified based on fields
+                                criteria. If your PE Front Office and .csv file have records in common, to avoid
+                                redundant data, duplicate
+                                records in .csv file are not imported into PE Front Office.
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">Overwrite</font>&#160;:After import, duplicate records
+                                are identified based on
+                                fields criteria. If your PE Front Office and .csv file have records in common, to avoid
+                                redundant data, the
+                                records in .csv file are imported and replaced with records in PE Front Office.
+                            </p>
+                            <p><br />
+                                <font color="#0099FF" size="3">Merge</font>&#160;: After import, duplicate records are
+                                identified based on
+                                fields criteria. Merge, unlike overwrite and skip, checks for duplicate records first
+                                and then captures only
+                                useful information from your .csv file and updates it in your PE Front Office. <span
+                                    data-href="./Duplicate_Merge_Importing.html" id="here" style="color:blue;"
+                                    title="Duplicate Merge Importing" data-header="Merge">Learn more</span>
+                            </p>
+                            <p><br />
+                                Here's a <a rel="nofollow" target="_blank" class="external text"
+                                    href="../../images/crm_images/import_contacts_from_existing_source_11.png">sample
+                                    image</a> that depicts how all these properties work
+                            </p>
+                            <p><br /></p>
+                        </div>
+                        <div class="headline"  >
+                            <h3> <span class="mw-headline" id="map"> Step 4: Map CRM Fields </span>
+                            </h3>
+                            <hr />
+                            <p>In the final step of import process, you will need to map import file Header/Column to
+                                fields in PE Front Office.
+                                Fields will be automatically mapped if your csv file's header matches with PE Front
+                                Office field label.</p>
+                            <p><br />
+                                <img class="images" alt="MappingImport6.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_6.png" width="900"
+                                    height="" />
+                            </p>
+                            <p><br />
+                                You can provide default values for mapping fields which will be picked up in case if the
+                                value for any field in
+                                file will be empty.
+                            </p>
+                            <p><br />
+                                <img class="images" alt="DefaultValueMapping7.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_7.png" width="900"
+                                    height="" />
+                            </p>
+                            <p><br />
+                                Also, frequently used mappings can be saved and reused.
+                            </p>
+                            <p><br />
+                                <img class="images" alt="SaveMapping8.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_8.png" width="900"
+                                    height="" />
+                            </p>
+                            <p><br />
+                                Saved mappings will be accessible across all users. You can delete the saved mappings by
+                                clicking on Trash icon.
+                            </p>
+                            <p><br />
+                                <img class="images" alt="SavedMapping9.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_9.png" width="900"
+                                    height="" />
+                            </p>
+                            <p><br /></p>
+                            <p>After successfully mapping fields, click <b>Import</b> button.</p>
+                        </div>
+                        <p><br /></p>
+                        <div class="headline observe" data-title="Import Results">
+                            <h3> <span class="mw-headline" id="importResults"> Import Results </span></h3>
+                            <hr />
+                            <p>After successfully importing records into PE Front Office, the imported results are
+                                displayed in tabular format.
+                            </p>
+                            <p><br />
+                                <img class="images" alt="ImportResult10.png"
+                                    src="../../images/crm_images/import_contacts_from_existing_source_10.png"
+                                    width="900" />
+                            </p>
+                            <p><br /></p>
+                            <ul>
+                                <li><b>Import More</b></li>
+                            </ul>
+                            <dl>
+                                <dd>Lets you start all new import again.</dd>
+                            </dl>
+                            <ul>
+                                <li><b>Last Imported Records</b></li>
+                            </ul>
+                            <dl>
+                                <dd>Displays records imported lately with the help of paging support.</dd>
+                            </dl>
+                            <ul>
+                                <li><b>Undo Last Import</b></li>
+                            </ul>
+                            <dl>
+                                <dd>Deletes all records that are created during the last import session. Reference
+                                    records related to other
+                                    modules will not be deleted.</dd>
+                            </dl>
+                        </div>
+                        <p><br /></p>
+                        <div class="headline observe" data-title="Notifications">
+                            <h3> <span class="mw-headline" id="notification"> Notifications </span></h3>
+                            <div class="alert alert-info">
+                                <p><span id="Import_Scheduled"><strong>Import Scheduled!</strong></span></p>
+                                <p>If you have more than 1000 records in your file, your import will be scheduled on
+                                    cron which is configured to
+                                    run once in every 15 minutes. If you have configured your Outgoing Server and Email
+                                    id properly, an email
+                                    notification will be sent to you after successful import.</p>
+                            </div>
+                            <p><br /></p>
+                            <div class="alert alert-block">
+                                <h4> <span class="mw-headline" id="Data_Corruption_Error">Data Corruption Error</span>
+                                </h4>
+                                <p>This error shows up when the import is interrupted for various reasons like crashing
+                                    in between, or cancelled
+                                    by a user etc. This error indicates that the import table still has records to be
+                                    imported into the system,
+                                    but all the information related to the import (like mapping, default values, merge
+                                    criteria) are all lost.
+                                    So these records can no more be imported and the user needs to clear this data
+                                    before starting any other
+                                    import.</p>
+                            </div>
+                            <p><br /></p>
+                            <div class="alert alert-block">
+                                <h4> <span class="mw-headline" id="Import_Locked_Error">Import Locked Error</span></h4>
+                                <p>This error will be displayed if the import has been already been started on the same
+                                    module by any other user
+                                    in PE Front Office. The details of the module, the user, and the time at which the
+                                    Import has been locked is
+                                    detailed within the error message itself.</p>
+                            </div>
+                            <div class="alert alert-error">
+                                <h4> <span class="mw-headline" id="Import_Interrupted_Error">Import Interrupted
+                                        Error</span></h4>
+                                <p>If an Admin user is performing import and if a non-admin user tries to start an
+                                    import on the same module, he
+                                    will get to see the Import Locked error. If non-admin user is doing import, and
+                                    Admin user attempts to
+                                    import on the same module, same time, he can be able to see the status of the
+                                    current import and he will
+                                    even have powers to cancel the current import; Consequently, the Import Interrupted
+                                    Error will be displayed
+                                    to non-admin user.</p>
+                            </div>
+                            <p><br /></p>
+                            <div class="alert alert-success">
+                                <p><span id="Heads_up"><strong>Heads Up!</strong></span> </p>
+                                <ul>
+                                    <li>If you would start importing in one particular module, you cannot import records
+                                        into the same or any
+                                        other module in PE Front Office.</li>
+                                    <li>If you would trigger import on a particular module, neither you nor any other
+                                        user in PE Front Office
+                                        can import records into the same module. However, other users can import records
+                                        into other modules in
+                                        PE Front Office.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><br /></p>
+
+
+                        <!-- End of Page Content -->
+                    </div>
+
+            </article>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <!-- <script>
+        sessionStorage.setItem("subTopicName", " Quickly Create a Contact");
+        sessionStorage.setItem(
+            "subTopicPageLink",
+            "./Quickly_create_a_Contact_record.html#quicklyCreate"
+        );
+    </script> -->
+   
+   <script>
+ num = 0;
+    let p = acc[0].nextElementSibling;
+    p.style.transition = "none";
+    p.style.maxHeight = p.scrollHeight + "px";
+    acc[0].classList.toggle("active");
+</script>
+<script src="../../js/breadCrumbs.js"></script>
+</body>
+
+</html>

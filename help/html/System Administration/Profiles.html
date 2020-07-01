@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+    
+   </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>System Administration</h2>
+    <div class="sidenavNew">
+      <button class="accordion" style="display: none;">
+        <a href="./Create_Investor.html"> </a>
+      </button>
+      <button class="accord">
+        <a href="./Users.html">Users</a>
+      </button>
+
+      <button class="accord" style="background: var(--link-bgColor);">
+        <a style="color: var(--link-color);" href="./Profiles.html">Profiles</a>
+      </button>
+      <button class="accord">
+        <a href="./Roles.html">Roles</a>
+      </button>
+      <button class="accord">
+        <a href="./Groups.html">Groups</a>
+      </button>
+      <button class="accord">
+        <a href="Sharing_Profiles.html">Sharing Profiles</a>
+      </button>
+      <button class="accord">
+        <a href="./Picklist_Editor.html">Picklist Editor</a>
+      </button>
+      <button class="accord">
+        <a href="./Picklist_Dependency_Setup.html">Picklist Dependency Setup</a>
+      </button>
+      <button class="accord">
+        <a href="./Menu_Editor.html">Menu Editor</a>
+      </button>
+      <button class="accord">
+        <a href="./Email_Templates.html">Email Templates</a>
+      </button>
+      <button class="accord">
+        <a href="./Company_Details.html">Company Details</a>
+      </button>
+      <button class="accord">
+        <a href="./Outgoing_Server.html">Outgoing Server</a>
+      </button>
+      <button class="accord">
+        <a href="./Workflows.html">Workflows</a>
+      </button>
+      <button class="accord">
+        <a href="./Audit_Trails.html">Audit Trails</a>
+      </button>
+      <button class="accord">
+        <a href="./User_Login_History.html">User Login History</a>
+      </button>
+      <button class="accord">
+        <a href="./Configuration_Editor.html">Configuration Editor</a>
+      </button>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+          <h3>
+            <span class="mw-headline" id="Create_a_Deal">Profiles </span>
+          </h3>
+          <p><br /></p>
+          <p>
+            Profiles are used to control actions that users can perform on
+            records. In addition, profiles can be used to restrict access to
+            specific fields, modules, and features such as import, export, etc.
+            When a profile is associated to a role, the access rights defined in
+            the profile will be applied across all users in that role.
+          </p>
+          <p><br /></p>
+          <hr />
+          <div class="alert alert-info">
+            <p>
+              <strong>Notes!</strong>
+              Users in higher hierarchy can always view records of users in
+              lower hierarchy.
+            </p>
+          </div>
+          <hr />
+          <h4 class="h4">
+            <span class="mw-headline" id="Step_1_:_Creating_Profiles"
+              >Creating Profiles
+            </span>
+          </h4>
+          <hr />
+          <p>
+            You can create different profiles and associate them with roles in
+            PE Front Office. For instance, you can create different profiles for
+            your Sales team, Support team, etc.
+          </p>
+          <p>Follow few simple steps to create a profile</p>
+          <ol>
+            <li>
+              Click gear icon
+              <img
+                alt="Setting.png"
+                class="icons"
+                src="../../images/System Administration/Profiles_1.png"
+                width="15"
+                height="15"
+              />
+              in the upper right.
+            </li>
+            <li>Click <b>CRM Settings</b>.</li>
+            <li>
+              Under <b>Users and Access Management</b> click on <b>Profiles</b>.
+            </li>
+            <li>You will see list of available profiles in PE Front Office.</li>
+            <li>
+              Click on <b>New Profile</b>.
+              <img
+                class="images"
+                src="../../images/System Administration/Profiles_2.png"
+                width="900"
+              />
+            </li>
+
+            <li>Creating profile is a two step process.</li>
+            <li>
+              In Step 1, provide <b>Profile Name</b> (mandatory),
+              <b>Description</b> (Optional) and choose whether you want to set
+              up a base profile and edit its privileges or choose all the
+              privileges from scratch.
+            </li>
+            <img
+              class="images"
+              src="../../images/System Administration/Profiles_3.png"
+              width="900"
+            />
+            <li>
+              In Step 2, define privileges for profile by enabling/disabling the
+              checkbox next to each functionality and tool.
+            </li>
+            <img
+              class="images"
+              src="../../images/System Administration/Profiles_4.png"
+              width="900"
+            />
+
+            <li>
+              If you have selected a base profile in Step 1, only the privileges
+              for the base profile will be enabled and you can edit them if
+              required.
+            </li>
+            <li>
+              If you did not select a base profile in Step 1, all the privileges
+              will be enabled and you will have to disable the appropriate
+              privileges as per the requirement.
+            </li>
+
+            <li>Click <b>Finish</b>.</li>
+          </ol>
+          <p><br /></p>
+          <h4 class="h4">
+            <span class="mw-headline" id="Step_3_:_Assigning_users_to_a_profile"
+              >Assigning users to a profile
+            </span>
+          </h4>
+          <hr />
+          <p>
+            Profile cannot be directly linked with users. You'll need to
+            associate a profile with a role; as a result, privileges are
+            affected to all users across that role.
+          </p>
+          <p>Here's how to do it</p>
+
+          <ol>
+            <li>
+              Click gear icon
+              <img
+                alt="Setting.png"
+                class="icons"
+                src="../../images/System Administration/Profiles_5.png"
+                width="15"
+                height="15"
+              />
+              in the upper right.
+            </li>
+            <li>Click <b>CRM Settings</b>.</li>
+            <li>
+              Under <b>Users and Access Management</b> click on <b>Roles</b>.
+            </li>
+            <li>You will see <b>Roles and Hierarchy Tree</b>.</li>
+            <img
+              class="images"
+              src="../../images/System Administration/Profiles_6.png"
+              width="900"
+            />
+            <li>
+              Hover the mouse on a role and click on
+              <img
+                class="icons"
+                src="../../images/System Administration/Profiles_7.png"
+              />
+              (edit role icon).
+            </li>
+            <li>You will see all available profiles.</li>
+            <li>
+              Select the profiles you want to assign to the role and assign them
+              using arrow buttons.
+              <img
+                class="images"
+                src="../screens/AssignProfiletoRole.png"
+                width="900"
+              />
+            </li>
+
+            <li>Click <b>Save</b>.</li>
+          </ol>
+          <p><br /></p>
+          <div class="alert alert-info">
+            <p><strong>Notes!</strong></p>
+            <ol>
+              <li>
+                You can associate multiple users and profiles for the same role.
+              </li>
+              <li>
+                When you associate multiple users for same role, the users under
+                the role will not be able to see each others' records.
+              </li>
+              <li>
+                A role always work with respect to Profiles and Sharing Access.
+              </li>
+            </ol>
+          </div>
+          <p><br /></p>
+          <h4 class="h4">
+            <span class="mw-headline" id="Deleting_a_Profile">
+              Deleting a Profile
+            </span>
+          </h4>
+          <hr />
+          <p>
+            If existing profiles doesn't meet your requirements, you can delete
+            them right away. Follow the simple steps listed below to delete an
+            existing profile.
+          </p>
+          <ol>
+            <li>
+              Click gear icon
+              <img
+                alt="Setting.png"
+                class="icons"
+                src="../../images/System Administration/Profiles_8.png"
+                width="15"
+                height="15"
+              />
+              in the upper right.
+            </li>
+            <li>Click <b>CRM Settings</b>.</li>
+            <li>
+              Under <b>Users and Access Management</b> click on <b>Profiles</b>.
+            </li>
+            <li>
+              You will see list of all profiles available in PE Front Office.
+            </li>
+            <li>
+              Click the trash icon
+              <img
+                class="icons"
+                src="../../images/System Administration/Profiles_9.png"
+              />
+              on the left of the desired profile.
+            </li>
+            <li>
+              Before deleting a profile you will have to transfer all its roles
+              to an existing profile.
+            </li>
+            <img
+              class="images"
+              src="../../images/System Administration/Profiles_10.png"
+            />
+            <li>
+              Choose profile from dropdown to which you want to transfer the
+              roles.
+            </li>
+            <li>Click <b>Save</b>.</li>
+          </ol>
+          <p><br /></p>
+
+          <!-- End of Page Content -->
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      sessionStorage.setItem("subTopicName", " ");
+      sessionStorage.setItem("subTopicPageLink", " ");
+      sessionStorage.setItem("greater", false);
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

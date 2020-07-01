@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+<title>Workflows - PE Front Office Help</title>
+
+<meta charset="UTF-8" />
+
+<!-- <link rel="stylesheet" href="../css/crmhelpstyle1.css" />
+<link rel="stylesheet" href="../css/crmhelpstyle2.css?303" media="screen"/> -->
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+ 
+
+<!-- Start of Main Page -->
+	
+	<div class="popupContainer">
+		
+	<div >
+
+		<article > 
+
+			<!-- Page Header -->
+<!-- 
+			<div class="page-header">
+				<h1>
+				Workflows &raquo;<small></small>
+				</h1>
+			</div>	 -->
+
+			<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+
+			<!-- Page Content -->
+
+                <center>
+                <p>
+                <body>
+                <img src="../../images/workflow_0.png" usemap="#Workflows" border="0">
+                <map name="Workflows">
+                <area shape="rect" coords="33,10,169,141" href="Workflows.html#Step_1:_Scheduling_workflow">
+                <area shape="rect" coords="391,138,255,10" href="Workflows.html#Adding_Condition.28s.29">
+                <area shape="rect" coords="472,10,608,139" href="Workflows.html#Adding_Task.28s.29">
+                </map>
+                </body>
+                </p>
+                </center>
+                
+                <p><br />
+                Workflows will streamline your business by automating operations like sending emails, creating activities, updating fields, etc.  As tasks are performed automatically, you need not have to execute them manually. 
+                </p><p><br />
+                Follow few simple steps to setup a workflow
+                </p>
+                <ol><li>Click gear icon <img alt="Setting.png" src="../../images/workflow_1.png" width="18" height="18" /> icon in the top right
+                </li><li>Click <b>CRM Settings</b>
+                </li><li>Click <b>Workflows</b> under <b>Other Settings</b>
+                </li><li>Click <b>New Workflow</b>
+                </li></ol>
+                <p><br />
+                </p>
+                <h3> <span class="mw-headline" id="Step_1:_Scheduling_workflow"> Step 1: Scheduling workflow </span></h3>
+                <hr />
+                <p>You'll need to provide basic details that include selecting a module and scheduling workflow. 
+                </p><p><br />
+                <img alt="CreateWorkflow.png" src="../../images/workflow_2.png" />
+				</p><p><br /><b>Workflows</b> gives you the ability to perform different operations on the selected module such as: sending an email, updating fields, creating a whole new record in another module, creating an event or todo, etc. This answers the question <i>why should we select a module here?</i>. We will discuss the actions that are triggered by the workflows in detail in Step-3. 
+                </p><p><br />
+                <img alt="ScheduleWorkflowstep1.png" src="../../images/workflow_3.png" 
+                width="100%"/>
+                </p><p><br />
+                You'll need to specify when would you like to run the workflow. Workflow running conditions are all predefined and you only have to choose the condition that suite your requirements.
+                </p>
+                <ol><li><b>Only on the first save</b>- Triggers workflow on your first save ie., when you create a new record. 
+                </li><li><b>Until the first time the condition is true</b>- Triggers workflow if your condition(Step-2) will be true. Once executed, your workflow will not trigger on the same record again. However, it will trigger actions on other records in the selected module. 
+                </li><li><b>Every time the record is saved</b>- Triggers workflow every time you will save your record—including first save.
+                </li><li><b>Every time the record is modified</b>- Triggers workflow every time you edit and save your record—excluding first save.
+                </li><li><b>System</b>
+                </li></ol>
+                <p><br /> <hr />
+                </p>
+                <h3> <span class="mw-headline" id="Adding_Condition.28s.29">  Step 2: Adding Condition(s) </span></h3>
+                <hr />
+                <p>Workflows will be executed on the records in the selected module. More often, you might only need to perform operations on selected records in that module. This is where conditions will come into play. Workflow will only be executed on the records that satisfy the condition specified by you.
+                </p><p><br />
+                For instance, I would like to create a workflow on Deal Pipeline module. I want the workflow to execute operations on records where 'Deal Stage' is 'Screened'.  So, my condition will be <code>Deal Stage</code> <code>is</code> <code>Screened</code>
+                </p><p><br />
+                <img alt="DefiningConditionsWorkflow.png" src="../../images/workflow_4.png" 
+                width="100%" />
+                </p><p><br />
+                You'll find two different options while defining conditions. The functionality of the conditions is described below with an example
+                </p><p><br />
+                1. <b>All Conditions&#160;:</b> Filters records based on AND condition. 
+                </p>
+                <pre>For instance, 
+                Condition 1
+                AND
+                Condition 2
+                AND
+                Condition 3
+                
+                Displays the results if and only if ALL conditions are matched. If one condition is failed, other queries will not be executed.</pre>
+                <p>2. <b>Any Conditions&#160;:</b> Filters records based on OR condition. 
+                </p>
+                <pre>For instance, 
+                Condition 1
+                OR
+                Condition 2
+                OR
+                Condition 3
+                
+                Displays the results if at-least ONE condition is matched. If one query is failed, other queries will  be executed.</pre>
+                <p><br />
+                </p>
+                <div class="alert alert-info">
+                <p><strong>Notes!</strong>
+                </p>
+                <ol><li>By default, AND condition is enabled between <b>ALL conditions</b> and <b>ANY conditions</b>. This will help you in grouping the two conditions, altogether.
+                </li><li>You can provide existing or custom criteria while defining conditions.
+                </li><li>You can define multiple conditions for a workflow by clicking on <b>Add Condition</b> button.
+                </li></ol>
+                </div>
+                <p>After defining conditions, click <b>Save</b>
+                </p><p><br /> <hr />
+                </p>
+                <h3> <span class="mw-headline" id="Adding_Task.28s.29"> Step 3: Adding Task(s) </span></h3>
+                <hr />
+                <p>The actions that should be executed with the help of workflows can be configured through tasks, while previously defined steps are just to provide directions and inputs. 
+                </p><p><br />
+                Click <b>New Task</b> button and select desired task
+                </p><p><br />
+                <img alt="AddingTasksWorkflows.png" src="../../images/workflow_5.png"  />
+                </p><p><br />
+                </p>
+                <ol><li><b><span href="Send_Email.html" title="Send Email">Send Mail</span></b>- To send an email notification 
+                </li><li><b><span href="Invoke_Custom_Function.html" title="Invoke Custom Function">Invoke Custom Function</span></b> - To update target fields of records in a module when actions are performed on source field in a different module
+                </li><li><b><span href="Create_Event.html" title="Create Event or To do">Create Event</span></b>- To create a new calendar event 
+                </li><li><b><span href="Create_To_do.html" title="Create Event or To do">Create To do</span></b>- To create a new calendar task
+                </li><li><b><span href="Update_Fields.html" title="Update Fields">Update fields</span></b>- To updates field(s) of selected module
+<!--                </li><li><b><a href="Create_Entity.html" title="Create Entity">Create Entity</a></b>- To create or update records when conditions are satisfied on parent record -->
+                </li></ol>
+				<p><br />
+                </p>
+
+						
+			<!-- End of Page Content -->
+
+			</div>	
+
+		</article>
+
+	</div> <!-- row -->
+	</div> <!-- container -->
+
+<!-- End of Main Page -->
+
+<!-- Footer -->
+<!--   
+  <footer class="footer">
+<p style="text-align:center !important;">Copyright @ 2013. <a rel="nofollow" target="_blank" class="external text" href="http://www.sumantratech.com/">Sumantra Tech Solutions </a>Private Limited. All Rights Reserved.</p>
+</footer> -->
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>
+			
+
+
+			

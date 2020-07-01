@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+  <head>
+    <title> </title>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="../css/crmhelpstyle1.css" />
+   </head>
+
+  <body>
+    <!-- Navigation Bar -->
+
+    <!-- Start of Main Page -->
+
+    <div class="popupContainer">
+      <div class=" ">
+        <article class=" ">
+          <!-- Page Header -->
+
+          <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            <!-- Page Content -->
+
+            <p>
+              This workflow is provided by default along with Sumantra CRM
+              package. This is a good example to depict how fields within same
+              record can be updated when workflow is executed. We are set to do
+              the following calculation.
+            </p>
+            <p>
+              <br />
+              <code>Probability</code> is equal to <code>40%</code> when deal
+              stage is screened.
+            </p>
+            <p>
+              <br />
+              1. Select <b>Deal Pipeline</b> in <b>Select Module</b> and my
+              condition will be
+              <b>Until the first time the condition is true</b>
+            </p>
+            <p>
+              <br />
+              <img
+                alt="EventsWorkflows.png"
+                class="images"
+                src="../../images/System Administration/Update_Fields_1.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>
+              2. The goal is to create events only when deal stage is screened;
+              so, my condition will be <code>Deal Stage is Screened</code>. If
+              condition is met, workflow will be triggered on the record. Once
+              executed, workflow doesn't trigger action on that record again.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="DefiningConditionsWorkflow.png"
+                class="images"
+                src="../../images/System Administration/Update_Fields_2.png"
+              />
+            </p>
+            <p>
+              <br />
+              3. Click <b>Save</b>
+            </p>
+            <p><br /></p>
+            <p>
+              4. Click <b>Add Task</b> and select <b>Update Fields</b>. Provide
+              <b>Task Title</b>; this is only for your reference. Click
+              <b>Add Field</b> button; as a result, two fields will be
+              displayed. One is target field other is source field. Select
+              <b>Probability</b> from the dropdown.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="WorkflowsForecastAmount.png"
+                class="images"
+                src="../../images/System Administration/Update_Fields_3.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>
+              Clicking on source field brings up a popup. You can define
+              calculations in this popup. In the popup, as we want to set the
+              value to 40, I will suggest you select Raw Text from the first
+              dropdown. Other options in dropdown are Field and Expression.
+              Field is used to set the value to another field and on selection
+              gives option to further select available fields from second
+              dropdown. Expression is used for performing calculations and on
+              selection gives option to further select available fields from
+              second dropdown and functions from the third.
+            </p>
+            <p>
+              <br />
+              Type 40 from your keyboard in the text box. Click <b>Save</b> to
+              update the value.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="WorkflowsExpression.png"
+                class="images"
+                src="../../images/System Administration/Update_Fields_4.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>5. Click <b>Save</b></p>
+            <br />
+
+            <!-- End of Page Content -->
+          </div>
+        </article>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <!-- End of Main Page -->
+
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+<p><a rel="nofollow" target="_blank" class="external text" href="http://www.sumantratech.com/">www.sumantratech.com</a></p>
+</footer> -->
+  </body>
+</html>

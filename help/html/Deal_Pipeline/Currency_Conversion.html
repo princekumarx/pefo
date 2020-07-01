@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Deal Pipeline</title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+  </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Deal Pipeline</h2>
+    <div class="sidenavNew">
+      <button class="accordion">
+        <a href="./Create_Deal_Pipeline.html">Create a Deal</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Create_Deal_Pipeline.html">
+              Create a Deal Manually
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="Create_Deal_Pipeline_by_Email.html">
+              Create a Deal by Email
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="Quickly_Create_Deal_Pipeline.html">
+              Quickly Create a Deal
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accord">
+        <a href="Deal_Pipeline_Information_Tab.html"
+          >Deal Pipeline Information</a
+        >
+      </button>
+
+      <button class="accord">
+        <a href="Additional_Information_Tab.html">Additional Information</a>
+      </button>
+      <button class="accord">
+        <a href="Notes_Tab.html">Notes</a>
+      </button>
+
+      <button class="accordion">
+        <a href="More_Information_Tab.html">More Information</a>
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./more_information_calendar.html">
+              Activities
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_email_templates.html">
+              Email
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="./more_information_documents.html">
+              Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accordion">
+        <a href="Edit_or_Delete_Deal_Pipeline.html"
+          >Manage Records in Deal Pipeline</a
+        >
+      </button>
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="Edit_or_Delete_Deal_Pipeline.html">
+              Edit or Delete Deals</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="Manage_Records_in_Deal_Pipeline.html">
+              Manage Deal Pipeline</a
+            >
+          </li>
+          <li class="nav-link" style="background: var(--link-bgColor);">
+            <a
+              style="color: var(--link-color);"
+              href="Currency_Conversion.html"
+            >
+              Apply Currency conversion</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+
+          <h3>
+            <span class="mw-headline" id="Currency_Conversion.3F"
+              >Currency Conversion
+            </span>
+          </h3>
+          <hr />
+          <p>
+            Currency conversion helps you to view following in different
+            currencies.
+          </p>
+          <ol>
+            <li>Deal Size (m)</li>
+            <li>Debt (m)</li>
+            <li>Enterprise Value (m)</li>
+            <li>Equity Value (m)</li>
+          </ol>
+          <br />To apply currency conversion
+          <ol>
+            <li>
+              In detailed view of Deal Pipeline, click on
+              <b>Apply Currency Conversion</b> on the right.
+            </li>
+            <li>
+              You will see a small window containing Deal Pipeline parameters
+              and a target currency dropdown.
+            </li>
+            <img
+              class="images"
+              src="../../images/deal_pipeline/Currency_Conversion_1.png"
+            />
+            <li>Choose the currency from the dropdown.</li>
+            <li>
+              Deal Pipeline's information in the selected currency will populate
+              automatically.
+            </li>
+          </ol>
+          <br />
+
+          <p><br /></p>
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      l = 0;
+      num = 2;
+
+      let p = acc[2].nextElementSibling;
+      p.style.transition = "none";
+      p.style.maxHeight = p.scrollHeight + "px";
+      acc[2].classList.toggle("active");
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>

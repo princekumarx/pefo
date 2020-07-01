@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+  <head>
+    <title>Send Email - Sumantra Solutions Help</title>
+
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="../css/crmhelpstyle1.css" />
+   </head>
+
+  <body>
+    <!-- Navigation Bar -->
+
+    <!-- Start of Main Page -->
+
+    <div class="popupContainer">
+      <div class=" ">
+        <article class=" ">
+          <!-- Page Header -->
+
+          <!-- <div class="page-header">
+				<h1>
+				Customization &raquo; Workflows &raquo; Send Email <small></small>
+				</h1>
+			</div>	 -->
+
+          <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            <!-- Page Content -->
+
+            <p>
+              I am going to send a email with deal details to assigned user or
+              group.
+            </p>
+            <p>
+              <br />
+              1. Select <b>Deal Pipeline</b> in <b>Select Module</b> and my
+              condition will be
+              <b>Until the first time the condition is true</b>.
+            </p>
+            <p><br /></p>
+            <p>
+              <img
+                alt="ScheduleWorkflowstep1.png"
+                class="images"
+                src="../../images/System Administration/Send_Email_1.png"
+              />
+            </p>
+            <p>
+              <br />
+              2. The idea is to send an alert exclusively to assigned user or
+              group about the change in deal stage to screened. So, my condition
+              is <code>Deal Stage is Screened</code>
+            </p>
+            <p><br /></p>
+            <p>
+              <img
+                alt="DefiningConditionsWorkflow.png"
+                class="images"
+                src="../../images/System Administration/Send_Email_2.png"
+              />
+            </p>
+            <p>
+              <br />
+              3. Click on <b>New Task</b> button and select <b>Send Mail</b>.
+              Provide <b>Task Title</b>; this is just for your reference. Status
+              should be set <b>Active</b>. If you do not want this workflow to
+              send emails anymore, you can make status <b>In Active</b>. In the
+              To field, you can either select email variables from the dropdown
+              next to it, or provide emails manually. My intention is to send
+              emails to assigned user. I will select <b>Email</b> from the
+              dropdown. And then, you can provide Subject which is actual
+              subject of the email, and compose email body.
+            </p>
+            <p>
+              Sumantra CRM gives you the flexibility to select field variables
+              which are displayed as field values when email is sent. For
+              instance, the field variable $dealname will display actual name
+              populated from Deal Name field of the record.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="AlertDealPipelineWorkflow.png"
+                class="images"
+                src="../../images/System Administration/Send_Email_3.png"
+              />
+            </p>
+            <p><br /></p>
+            <p>4. Click <b>Save</b></p>
+            <p>
+              5. Finally, click <b>Save</b> again as you complete the process of
+              creating the workflow
+            </p>
+            <p><br /></p>
+            <h3>
+              <span class="mw-headline" id="Execute_Task"> Execute Task </span>
+            </h3>
+            <hr />
+            <p>
+              Basically, workflow tasks send email within 15 mins after the
+              conditions are met. However, you can also configure your workflow
+              to send email for you in desired time in future.
+            </p>
+            <p>
+              <br />
+              <img
+                alt="ExecuteTaskWorkflow1.png"
+                class="images"
+                src="../../images/System Administration/Send_Email_4.png"
+              />
+            </p>
+            <p>
+              <br />
+              Here's how to do it
+            </p>
+            <ol>
+              <li>In the Send Email task, click on Execute Task check-box</li>
+              <li>
+                Provide the number of days after which the email should be
+                triggered
+              </li>
+              <li>Select <b>After</b> from the second dropdown</li>
+              <li>
+                From the third dropdown, select <b>Created Time</b> or
+                <b>Modified Time</b>. Your workflow is triggered depending upon
+                the values in Created Time or Modified Time fields of the
+                records in Sumantra CRM
+              </li>
+            </ol>
+
+            <!-- End of Page Content -->
+          </div>
+        </article>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+
+    <!-- End of Main Page -->
+
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+      <p>
+        <a
+          rel="nofollow"
+          target="_blank"
+          class="external text"
+          href="http://www.sumantratech.com/"
+          >www.sumantratech.com</a
+        >
+      </p>
+    </footer> -->
+  </body>
+</html>

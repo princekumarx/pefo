@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+    <title> </title>
+    <meta name="keywords" content="Contact More Information" />
+    <meta name="description" content="This will display all-round view of relations of Contacts module with other modules and maintains log of complete
+  history." />
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+ </head>
+
+<body>
+    <nav class="navbar"></nav>
+    <h2>Funds Administration</h2>
+    <div class="sidenavNew">
+        <button class="accordion" style="display: none;">
+            <a href="./Create_Investor.html"> </a>
+        </button>
+        <button class="accord">
+            <a href="./Create_a_Fund.html">Create a Fund</a>
+        </button>
+
+        <button class="accord">
+            <a href="./Create_an_Investor.html">Create an Investor</a>
+        </button>
+        <button class="accord">
+            <a href="./Link_Investor_to_a_Fund.html">Link Investor to a Fund</a>
+        </button>
+        <button class="accord">
+            <a href="./Create_a_Deal.html">Create a Deal</a>
+        </button>
+        <button class="accord">
+            <a href="./Link_Deal_to_a_Fund.html">Link Deal to a Fund</a>
+        </button>
+        <button class="accord">
+            <a href="./Create_a_Portfolio_Company.html">Create a Portfolio Company</a>
+        </button>
+        <button class="accord">
+            <a href="./Link_Portfolio_Company_to_a_Deal.html">Link Portfolio Company to a
+                Deal</a>
+        </button>
+        <button class="accord">
+            <a href="./Enter_Drawdown_Distribution.html">Enter
+                Drawdown/Distribution</a>
+        </button>
+        <button class="accord" >
+            <a  href="./Link_Fund_to_a_Portfolio.html">Link Fund to a Portfolio</a>
+        </button>
+        <button class="accord" style="background: var(--link-bgColor);">
+            <a style="color: var(--link-color);" href="./Enter_the_Cashflows.html">Enter the Cashflows</a>
+        </button>
+        <button class="accord">
+            <a href="./Enter_the_Valuation.html">Enter the Valuation</a>
+        </button>
+        <button class="accord">
+            <a href="./Capture_quarterly_Portfolio_level_performance.html">Capture quarterly Portfolio level
+                performance</a>
+        </button>
+        <button class="accord">
+            <a href="./Capture_quarterly_Fund_level_performance.html">Capture quarterly Fund level performance</a>
+        </button>
+    </div>
+    <!-- main area -->
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <article class="span12">
+                <div class="page-header"></div>
+                <h3>
+                    <span class="mw-headline" id="Investor.3F">Enter the Cashflows</span>
+                </h3>
+                <hr>
+            <br /><br /><b>Amortization Schedule Panel</b> <br /><br />
+            Select instrument from the dropdown and data corresponding to selected instrument will be populated. List view shows
+            following details of the selected instrument
+            
+            <ol>
+                <li>End Date</li>
+                <li>No. of Inst Purchased</li>
+                <li>Bonds Held</li>
+                <li>Principal Held</li>
+                <li>Purchase Discount</li>
+                <li>Acquisition Amount</li>
+                <li>Acquisition Fees (to be paid)</li>
+                <li>Interest Paid on Acquisition</li>
+                <li>Principal Repayment (to be recd)</li>
+                <li>Return of Capital (Security Receipts)</li>
+                <li>Redemption Premium (after WHT)</li>
+                <li>Cash Interest (after WHT)</li>
+                <li>Interest Accrued/PIK</li>
+                <li>PIK Bonds</li>
+                <li>PIK Interest (after WHT)</li>
+                <li>Fee Income (after WHT)</li>
+                <li>Equity Upside (after WHT)</li>
+                <li>Dividend</li>
+                <li>No. of Inst Sold</li>
+            </ol>
+            <br />You can aslo perform multiple operations on the selected instrument like
+            <ol>
+                <li>Generate/Download Amortization Schedule : Automatic or Manula</li>
+                <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_8.png" width="900" />
+                <li>Import Amortization Schedule</li>
+                <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_9.png" width="400" /></br></br>
+                Import downloaded Amortization sheet by click on Choose File and import is done only when <b>Is Validate</b> should
+                be <b>Yes</b> in sheet.</br>
+                <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_10.png" width="900" />
+                <li>View Amortization Schedule History</li>
+                <li>Generate Report(Amortization Schedule vs Payments</li>
+                <li>Close Amortization Schedule</li>
+                If Amortization is Closed for an instrument then all transaction should display in Gray color and user unable to
+                make payment against any transaction i.e. while clicking on Viewpayment from Action, <b>Add</b> link hide from add
+                payment popup.
+                <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_11.png" alt="11" width="900" />
+            </ol>
+            
+            You can get <b>Payment</b> details by clicking on <b>Cashflow</b> link next to each record in the list view.</br></br>
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_12.jpg" width="900" />
+            <p>Add Payment from View Payment link.</p>
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_13.png" width="900" /></br></br>
+            
+            <b>View Amortization Schedule History : </b>
+            You can <b>Download</b> Amortization Sheet imported by user on different dates.</br>
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_14.jpg" width="900" /><br /><br />
+            
+            <b>Actual Cashflow Panel</b> <br /><br />
+            Select instrument from the dropdown and data corresponding to selected instrument will be populated. List view shows
+            following details of the selected instrument
+            <ol>
+                <li>Tran Date</li>
+                <li>Inst. Name</li>
+                <li>Instrument Type</li>
+                <li>Investment CCY</li>
+                <li>Fund/Investor CCY</li>
+                <li>Tran Type</li>
+                <li>Transaction Description</li>
+                <li>No. of Instruments</li>
+                <li>Transaction Amount (Inv CCY)</li>
+                <li>Transaction Amount (Fund CCY)</li>
+                <li>Exchange Rate</li>
+                <li>Price per Inst. (Inv CCY)</li>
+                <li>Price per Inst. (Fund CCY)</li>
+                <li>Notes</li>
+                <li>TDS</li>
+            </ol>
+            You can add records by clicking the <b>Add</b> link in top right and <b>Edit</b> or <b>Delete</b> using links in the
+            Action column.
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_15.jpg" width="900" />
+            <p><b>Download Template</b> will download Template in excel and show how to import data from excel.
+            <p>
+            <p><b>Import Actual Data</b> will import data from excel and display on the screen.
+            <p>
+            <p><b>Export To XLS</b> will download data in excel sheet as display on screen.</p> <br>
+            
+            <table class="table table-striped table-bordered table-condensed" style="width:600px;">
+                <tr>
+                    <th>S/N</th>
+                    <th>Transaction Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>EPUR</td>
+                    <td>Equity Purchase</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ESAL</td>
+                    <td>Equity Sale</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>EDIV</td>
+                    <td>Dividend</td>
+                </tr>
+                <tr>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td>LPUR</td>
+                    <td>Loan Purchase</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>LADV</td>
+                    <td>Loan Advance</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>LSAL</td>
+                    <td>Loan Sale</td>
+                </tr>
+                <tr>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>BPUR</td>
+                    <td>Bond Purchase</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>BSAL</td>
+                    <td>Bond Sale</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>BPIK</td>
+                    <td>Bond Payment in Kind</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>AIPP</td>
+                    <td>Accrued Interest Paid on Purchase</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>AIRS</td>
+                    <td>Accrued Interest Received on Sale</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>REP</td>
+                    <td>Principal Repayment</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>INT</td>
+                    <td>Interest Payment</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>ACP</td>
+                    <td>Accrual Payment</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>IOP</td>
+                    <td>Interest on overdue Principal</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>IOI</td>
+                    <td>Interest on overdue Interest</td>
+                </tr>
+                <tr>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>WPUR</td>
+                    <td>Warrants/Options Purchase</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>WSAL</td>
+                    <td>Warrants/Options Sale</td>
+                </tr>
+                <tr>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>ECON</td>
+                    <td>Equity Purchase through conversion</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>PCON</td>
+                    <td>Pref Share conversion to equity</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>BCON</td>
+                    <td>Bond conversion to equity</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>WCON</td>
+                    <td>Warrant (options) conversion to equity</td>
+                </tr>
+                <tr>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                    <td style="height:12px"></td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>OTC</td>
+                    <td>Other Cost</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>OTI</td>
+                    <td>Other Income/Fee</td>
+                </tr>
+            
+            </table>
+            
+            
+            
+            <p>You can also apply sorting on columns highlighted in blue color either in Ascending or Decending
+                order. After applying sorting an arrow with red color is display in upward or downward direction.
+            </p>
+            <p><b>View History</b> link in Action column display values of actual data while edited in multiple
+                times or payment added from Amortization.</p>
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_16.png" alt="16"
+                width="600" /><br /><br />
+            
+            <b>Expected Cashflow Panel</b> <br /><br />
+            Select instrument from the dropdown and data corresponding to selected instrument will be populated.
+            List view shows following details of the selected instrument
+            <ol>
+                <li>Tran Date</li>
+                <li>Inst. Name</li>
+                <li>Instrument Type</li>
+                <li>Investment CCY</li>
+                <li>Tran Type</li>
+                <li>Transaction Description</li>
+                <li>No. of Instruments</li>
+                <li>Transaction Amount</li>
+                <li>Original Expected Amount</li>
+                <li>Price per Instrument</li>
+                <li>Notes</li>
+            </ol>
+            You can add records by clicking the <b>Add</b> link in top right and <b>Edit</b> using links in the
+            Action column.
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_17.jpg" width="900" />
+            <p><b>Download Template</b> will download Template in excel and show how to import data from excel.
+            <p>
+            <p><b>Import Expected Data</b> will import data from excel and display on the screen.
+            <p>
+            <p><b>Export To XLS</b> will download data in excel sheet as display on screen.</p> <br>
+            <p>You can also apply sorting on columns highlighted in blue color either in Ascending
+                or Decending order. After applying sorting an arrow with red color is display in
+                upward or downward direction.</p>
+            <p><b>View History</b> link in Action column display values of expected data while
+                edited in multiple times or payment added from Amortization.</p><br />
+            <img class="images" src="../../images/Portofolio Company/Detailed_View_Cashflow_Tab_18.png" width="600" /><br />
+            <p><br /></p>
+<hr>
+            </article>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+     
+    <script src="../../js/breadCrumbs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+  </head>
+
+<body>
+    <nav class="navbar"></nav>
+    <h2>System Administration </h2>
+    <div class="sidenavNew">
+
+        <button class="accordion" style="display:none">
+            <a href="./Create_Investor.html"> </a>
+        </button>
+        <button class="accord">
+            <a href="./Users.html">Users</a>
+        </button>
+
+
+        <button class="accord">
+            <a href="./Profiles.html">Profiles</a>
+        </button>
+        <button class="accord">
+            <a href="./Roles.html">Roles</a>
+        </button>
+        <button class="accord">
+            <a href="./Groups.html">Groups</a>
+        </button>
+        <button class="accord" >
+            <a  href="Sharing_Profiles.html">Sharing Profiles</a>
+        </button>
+        <button class="accord" style="background: var(--link-bgColor);">
+            <a style="color: var(--link-color);" href="./Picklist_Editor.html">Picklist Editor</a>
+        </button>
+        <button class="accord">
+            <a href="./Picklist_Dependency_Setup.html">Picklist Dependency Setup</a>
+        </button>
+        <button class="accord">
+            <a href="./Menu_Editor.html">Menu Editor</a>
+        </button>
+        <button class="accord">
+            <a href="./Email_Templates.html">Email Templates</a>
+        </button>
+        <button class="accord">
+            <a href="./Company_Details.html">Company Details</a>
+        </button>
+        <button class="accord">
+            <a href="./Outgoing_Server.html">Outgoing Server</a>
+        </button>
+        <button class="accord">
+            <a href="./Workflows.html">Workflows</a>
+        </button>
+        <button class="accord">
+            <a href="./Audit_Trails.html">Audit Trails</a>
+        </button>
+        <button class="accord">
+            <a href="./User_Login_History.html">User Login History</a>
+        </button>
+        <button class="accord">
+            <a href="./Configuration_Editor.html">Configuration Editor</a>
+        </button>
+
+
+
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+        <div class="row-fluid">
+            <article class="span12">
+                <div class="page-header"></div>
+                <h3>
+                    <span class="mw-headline" id="Create_a_Deal">Sharing Profiles
+                    </span>
+                </h3>
+            <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+            
+                <!-- Page Content -->
+                <p>As the name itself says, Picklist is a drop-down field with list of options available, within which, only one
+                    option can be selected. For instance, <b>Job Title</b> in <b>Contacts Module</b>. <b>Picklist Editor</b> is used
+                    to configure picklist values in different modules. It enables you to add new values, rename, delete or rearrange
+                    existing picklist values. Picklist values vary across roles — users under a role can only access picklist values
+                    assigned to that role.
+                </p>
+                <p><br />
+                </p>
+                <!-- <table id="toc" class="toc">
+                    <tr>
+                        <td>
+                            <div id="toctitle">
+                                <h2>Contents</h2>
+                            </div>
+            
+                            <p><a href="#GetStarted"><span class="tocnumber"></span> <span class="toctext">Get Started</span></a>
+                            </p>
+                            <p><a href="#AddPicklistItem"><span class="tocnumber"></span> <span class="toctext">Add Picklist
+                                        Item</span></a></p>
+                            <p><a href="#AssignPicklistItem"><span class="tocnumber"></span> <span class="toctext">Assign Picklist
+                                        Item</span></a></p>
+                            <p><a href="#RenamePicklistItem"><span class="tocnumber"></span> <span class="toctext">Rename Picklist
+                                        Item</span></a></p>
+                            <p><a href="#DeletePicklistItem"><span class="tocnumber"></span> <span class="toctext">Delete Picklist
+                                        Item</span></a></p>
+                            <br />
+                        </td>
+                    </tr>
+                </table> -->
+                <h3> <span class="mw-headline" id="GetStarted">Get Started</span></h3>
+                <hr />
+            
+                <p>You can create a custom picklist field with desired set values on a selected module. While creating records,
+                    select a value from the picklist to have it automatically inserted in the field.
+                </p>
+            
+            
+                <br />
+                <h3> <span class="mw-headline" id="Working_with_Picklist_Fields"> Working with Picklist Fields </span></h3>
+                <hr />
+                <p>You can perform a wide variety of operations on picklist fields like adding new values to existing picklist
+                    field, modifying, deleting, rearranging existing values of a picklist field. Additionally, you can also assign
+                    roles on selected picklist values.
+                </p>
+                <p><br />
+                </p>
+            
+            
+                <h4> <span class="mw-headline" id="AddPicklistItem"> Add Picklist Item </span></h4>
+                <hr />
+                <ol>
+                    <li>Click gear <img alt="Setting.png" class="icons"  src="../../images/System Administration/Picklist_Editor_1.png" width="18" height="18" /> icon in the top
+                        right.
+                    </li>
+                    <li>Click <b>CRM Settings</b>.
+                    </li>
+                    <li>Click on<b> Picklist Editor</b> under <b>Studio</b>.</li>
+                    <li>Select <b>Module</b>.</li>
+                    <li>Select <b>Picklist</b>.</li>
+                    <li>Click on <b>Add Item</b>. You will see <b>Add Picklist Value</b> pop up window.</li><br />
+                    <img class="images" src="../../images/System Administration/Picklist_Editor_2.png" />
+                    <br />
+                    The pop up window will show all the existing values for the selected <b>Module</b> and <b>Picklist</b>.
+                    <li>Select <b>Role</b>.</li>
+                    <li>Enter the new <b>Value</b> for Picklist.</b>.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p><br>
+                </p>
+            
+            
+                <h4> <span class="mw-headline" id="AssignPicklistItem"> Assign Picklist Item </span></h4>
+                <hr />
+                <ol>
+                    <li>Open<b> Picklist Editor</b>.</li>
+                    <li>Select <b>Module</b>.</li>
+                    <li>Select <b>Role</b>.</li>
+                    <li>You will see all the <b>Picklists</b> for the selected module.</li>
+                    <li>Click on <b>Assign</b> button for any Picklist. You will see <b>Assign Picklist Value</b> pop up.</li><br />
+                    <img class="images" src="../../images/System Administration/Picklist_Editor_3.png" />
+                    <br /><br />
+                    The pop up window will show all the values in picklist and assigned values to the selected <b>Role</b> in
+                    selected <b>Module</b>.</li>
+                    <li>Assign values using arrows.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            
+                <p><br>
+                </p>
+            
+            
+                <h4> <span class="mw-headline" id="RenamePicklistItem"> Rename Picklist Item </span></h4>
+                <hr />
+                <ol>
+                    <li>Open<b> Picklist Editor</b>.</li>
+                    <li>Select <b>Module</b>.</li>
+                    <li>Select <b>Picklist</b>.</li>
+                    <li>Click on <b>Rename Item</b> button. You will see <b>Edit Picklist Value</b> pop up window.</li><br />
+                    <img class="images" src="../../images/System Administration/Picklist_Editor_4.png" />
+                    <br /><br />
+                    The pop up window will show all the existing values for the selected <b>Module</b> and <b>Picklist</b>.
+                    <li>Select the <b>Value</b> we want to rename from the list.</li>
+                    <li>Enter the new <b>Value</b> in <b>'Replace with'</b> field.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <br>
+            
+            
+                <h4> <span class="mw-headline" id="DeletePicklistItem"> Delete Picklist Item </span></h4>
+                <hr />
+                <ol>
+                    <li>Open<b> Picklist Editor</b>.</li>
+                    <li>Select <b>Module</b>.</li>
+                    <li>Select <b>Picklist</b>.</li>
+                    <li>Click on <b>Delete Item</b> button. You will see <b>Delete Picklist Value</b> pop up window.</li><br />
+                    <img class="images" src="../../images/System Administration/Picklist_Editor_5.png" />
+                    <br /><br />
+                    The pop up window will show all the existing values for the selected <b>Module</b> and <b>Picklist</b>.
+                    <li>Select the <b>Value</b> we want to delete from the list.</li>
+                    <li>Select the <b>Existing Value</b> which will replace the deleted value in the records.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <br />
+            
+            
+                <!-- End of Page Content -->
+            
+            </div>
+
+                    <!-- End of Page Content -->
+
+
+            </article>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+
+        sessionStorage.setItem("subTopicName", " ");
+        sessionStorage.setItem("subTopicPageLink", " ");
+        sessionStorage.setItem("greater", false);
+
+
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+</body>
+
+</html>

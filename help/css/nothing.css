@@ -1,0 +1,36 @@
+body {
+  font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+p {
+  font-family: inherit;
+  margin: 0;
+  text-align: justify !important;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body > .container-fluid {
+  background-color: white;
+  box-shadow: 0px 5px 5px gray;
+  -moz-box-shadow: 0px 0 5px gray;
+  -webkit-box-shadow: 0px 0 2px #277a9b;
+  -ms-box-shadow: 0px 0 5px gray;
+}
+
+.navbar .brand {
+  color: #f7f7f7;
+}
+
+footer > p {
+  text-align: center;
+}

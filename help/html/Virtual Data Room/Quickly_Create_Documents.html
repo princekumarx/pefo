@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../../css/crmhelpstyle1.css" />
+    <link rel="icon" href="../../images/PEFO-Logo-title.png" />
+     
+   </head>
+
+  <body>
+    <nav class="navbar"></nav>
+    <h2>Virtual Data Room</h2>
+    <div class="sidenavNew">
+      <button class="accord">
+        <a href="./Manage_Documents.html">Manage Documents </a>
+      </button>
+      <button class="accord">
+        <a href="./Create_Folders.html">Create Folders</a>
+      </button>
+      <button class="accordion">
+        <a href="./Create_Documents.html">Create Documents</a>
+      </button>
+
+      <div class="panel">
+        <ul>
+          <li class="nav-link">
+            <a href="./Create_Documents.html">
+              Create Documents
+            </a>
+          </li>
+          <li class="nav-link" style="background: var(--link-bgColor);">
+            <a
+              style="color: var(--link-color);"
+              href="./Quickly_Create_Documents.html"
+            >
+              Quickly Create Documents
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="accord">
+        <a href="./Download_Documents.html">Download Documents</a>
+      </button>
+    </div>
+    <!-- main page content -->
+    <div class="container-fluid" id="contact">
+      <div class="row-fluid">
+        <article class="span12">
+          <div class="page-header"></div>
+          <h3>
+            <span class="mw-headline" id="Quick_Create_Documents">
+              Quickly Create Documents
+            </span>
+          </h3>
+          <hr />
+          You can enter basic details of the Document through Quick create. This
+          might be helpful if you are running out of time.<br />
+          Steps to create Document through Quick create
+          <ol>
+            <li>Click <b>Quick Create</b> drop-down at the top right.</li>
+            <img
+              class="images"
+              src="../../images/Virtual Data Room/Quickly_Create_Documents_1.png"
+              width="900"
+            />
+            <li>Choose <b>New Document</b>.</li>
+            <li>
+              In the Create Document view, fill in the Document's details.
+            </li>
+            <img
+              class="images"
+              src="../../images/Virtual Data Room/Quickly_Create_Documents_2.png"
+            />
+            <li>Click <b>Save</b>.</li>
+          </ol>
+
+          <p><br /></p>
+          <!-- End of Page Content -->
+        </article>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="../../js/script.js"></script>
+    <script>
+      sessionStorage.setItem("subTopicName", " ");
+      sessionStorage.setItem("subTopicPageLink", " ");
+      sessionStorage.setItem("greater", false);
+      l = 0;
+      num = 0;
+      let p = acc[num].nextElementSibling;
+      p.style.transition = "none";
+      p.style.maxHeight = p.scrollHeight + "px";
+      acc[num].classList.toggle("active");
+      sessionStorage.setItem("noBgColor", true);
+    </script>
+    <script src="../../js/breadCrumbs.js"></script>
+  </body>
+</html>
