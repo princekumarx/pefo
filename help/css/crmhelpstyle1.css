@@ -981,7 +981,7 @@ a:hover {
 
 .row-fluid {
   width: 100%;
-   
+
   *zoom: 1;
 }
 
@@ -3459,7 +3459,7 @@ body .footer {
 }
 
 .sidenav {
-  height: 55%; /* 100% Full-height */
+  height: 50%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -3467,7 +3467,7 @@ body .footer {
   right: 0;
   background-color: rgb(218, 237, 247);
   overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 10px; /* Place content 60px from the top */
+  padding-top: 1%; /* Place content 60px from the top */
   transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -3481,6 +3481,13 @@ body .footer {
   transition: 0.3s;
 }
 
+.sidenav .hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #0f2152;
