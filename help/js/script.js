@@ -173,7 +173,7 @@ acc.forEach((arr, i) => {
 
 //* POPUP JS
 
-let here = document.querySelectorAll("#here");
+let popBtn = document.querySelectorAll("#here");
 let popup = document.querySelector("#popup");
 let popupContainer = document.querySelector(".pop-container");
 let content = document.querySelector("#content");
@@ -182,7 +182,7 @@ let header = document.querySelector(".header");
 let body = document.querySelector("body");
 //* adding event to each click more buttons
 
-here.forEach((item) => {
+popBtn.forEach((item) => {
   item.addEventListener("click", async (e) => {
     fetch(e.target.getAttribute("data-href"))
       .then((res) => res.text())

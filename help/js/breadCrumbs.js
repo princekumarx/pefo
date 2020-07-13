@@ -65,9 +65,21 @@ aAccord.forEach((a, i) => {
     sessionStorage.setItem("moduleTopicName", a.innerHTML);
     sessionStorage.setItem("moduleTopicPageLink", a.getAttribute("href"));
     sessionStorage.setItem("n", i);
+    localStorage.setItem("n", i);
     sessionStorage.setItem("noBgColor", false);
   });
 });
+// console.log(localStorage.getItem("n"));
+// accordNum = localStorage.getItem("n");
+// localNum =
+//   accordNum || // console.log(localStorage.getItem("n"));
+//   // accordNum = localStorage.getItem("n");
+//   // localNum = accordNum || 0;
+//   // let p = acc[localNum].nextElementSibling;
+//   // p.style.transition = "none";
+//   // p.style.maxHeight = p.scrollHeight + "px";
+//   // acc[localNum].classList.toggle("active");
+//   // acc[localNum].style.background = "none";
 
 // loading  on page
 
