@@ -223,11 +223,13 @@ function upDatingBreadCrumbs() {
 }
 
 upDatingBreadCrumbs();
-
+// console.log(aAccord.length > 0);
 let noBgColor = sessionStorage.getItem("noBgColor");
 JSON.stringify(noBgColor);
-if (noBgColor == "true") {
-  acc[num].style.background = "none";
-} else {
-  acc[num].style.background = "rgba(186, 226, 246, 0.521)";
+if (aAccord.length > 0) {
+  if (noBgColor == "true" && aAccord.length > 0) {
+    acc[num].style.background = "none";
+  } else {
+    acc[num].style.background = "rgba(186, 226, 246, 0.521)";
+  }
 }
